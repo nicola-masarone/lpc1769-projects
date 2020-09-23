@@ -1,0 +1,6 @@
+enet_17xx_40xx.h:563:20:Chip_ENET_IsMIIBusy	16	static
+lpc_phy_smsc87x0.c:94:15:lpc_mii_write	24	static
+lpc_phy_smsc87x0.c:119:15:lpc_mii_read	24	static
+lpc_phy_smsc87x0.c:144:13:smsc_update_phy_sts	16	static
+lpc_phy_smsc87x0.c:186:10:lpc_phy_init	24	static
+lpc_phy_smsc87x0.c:230:10:lpcPHYStsPoll	16	static
