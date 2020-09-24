@@ -20,7 +20,7 @@ We note that all this can also be achieved with simple manual switches (apart fr
 ## Used material
 * Development board for LPC1769 with expansion connectors
 * USB cable for connection to PC
-* Development station with LPCXpresso
+* Development station with MCUXpresso
 * Software project lpc1769_7seg
 * 1 breadboard
 * 7-segment 2-digit display
