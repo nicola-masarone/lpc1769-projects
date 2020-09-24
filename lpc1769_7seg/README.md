@@ -48,6 +48,14 @@ The power supply to pins 9 and 4 of the 7-segment display (common anodes) cannot
   <img src="pic/bjt_out_schem.png" width=500/>
 </p>
 
-*Translation for the italian comment from the picture above: the two BC557B BJTs work as switches, controlled by pins P2.11 and P2.10 of the micro. When the pin is at logic low (logic negated) the corresponding BJT is a closed switch (feeds the 7-segment display digit).*
+Translation for the comment from the picture above: *the two BC557B BJTs work as switches, controlled by pins P2.11 and P2.10 of the micro. When the pin is at logic low (logic negated) the corresponding BJT is a closed switch (feeds the 7-segment display digit).*
 
 Note that the transistors power the display LEDs when the logic value applied to the base is low (0V). Otherwise the LEDs of the corresponding digit are off (logic denied or low active).
+
+## Design of the cathode driving circuit
+As for the cathodes of the LEDs, more or less what we saw in the LED project in sequence with variable speed is repeated, with the variation that this time the LEDs are connected with the anode to the common power supply and the cathode to the current limiting resistor which in turn is connected to the output pin of the microcontroller (see figure below):
+<p align="center">
+  <img src="pic/inv_LED_output_schem.png" width=250/>
+</p>
+
+Da notare che in questo caso la logica di comando è invertita: per accendere il LED è necessario che il pin del microcontrollore sia a livello logico basso (0V).
