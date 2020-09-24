@@ -26,7 +26,7 @@ We note that all this can also be achieved with simple manual switches (apart fr
 * 7-segment 2-digit display
 * 8 limiting resistors of about 3.3 kΩ
 * 2 PNP transistors type BC557B
-* 2 basic transistor control resistors of about 10kΩ
+* 2 transistor base control resistors of about 10kΩ
 * connection cables from breadboard
 ## Assembly diagram
 The following figure shows the assembly diagram of the proposed exercise:
