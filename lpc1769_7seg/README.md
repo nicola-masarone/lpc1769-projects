@@ -81,4 +81,4 @@ This function transforms the value of the digit to be displayed in combination o
   <img src="pic/setdigits.png" width=500>
 </p>
 
-Note that at the beginning of the function all the LEDs are turned off with a FIO2SET command and then are switched on selectively (switch statement) with a FIO2CLR command (logic negated).
+Note that at the beginning of the function all the LEDs are turned off with a FIO2SET command and then are switched on selectively (switch statement) with a FIO2CLR command (negated logic).
