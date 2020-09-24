@@ -75,7 +75,7 @@ Within the interrupt management function for the System Tick Timer we find the i
 </p>
 
 Within the same manager, a counting cycle from 0 to 99 is carried out for the numbers to be shown on the display, with the value increasing every second. Still in the same manager, the single digits of the number to be displayed are obtained and the LED driving function setDigits (char digit) is called.
-### SetDigits function (char digit)
+### setDigits function (char digit)
 This function transforms the value of the digit to be displayed in combination of pins of the microcontroller to be placed at a low logic level, based on the display LEDs that must be turned on (see the following figure):
 <p align="center">
   <img src="pic/setdigits.png" width=500>
