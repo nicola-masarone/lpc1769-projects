@@ -16,3 +16,20 @@ Then we have to interrupt the power supply to pin 9 (turning off the LEDs of dig
   <img src="pic/2digits-4.png" width=400/>
 </p>
 We note that all this can also be achieved with simple manual switches (apart from the impossibility of obtaining in this way frequencies such as to deceive our eye).
+
+## Used material
+* Development board for LPC1769 with expansion connectors
+* USB cable for connection to PC
+* Development station with LPCXpresso
+* Software project lpc1769_7seg
+* 1 breadboard
+* 7-segment 2-digit display
+* 8 limiting resistors of about 3.3 kΩ
+* 2 PNP transistors type BC557B
+* 2 basic transistor control resistors of about 10kΩ
+* connection cables from breadboard
+## Assembly diagram
+The following figure shows the assembly diagram of the proposed exercise:
+<p align="center">
+  <img src="pic/7-segmenti_bb.png" width=800/>
+</p>
