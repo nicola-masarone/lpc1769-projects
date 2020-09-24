@@ -58,4 +58,7 @@ As for the cathodes of the LEDs, more or less what we saw in the LED project in 
   <img src="pic/inv_LED_output_schem.png" width=250/>
 </p>
 
-Da notare che in questo caso la logica di comando è invertita: per accendere il LED è necessario che il pin del microcontrollore sia a livello logico basso (0V).
+Note that in this case the command logic is inverted: to turn on the LED, the pin of the microcontroller must be at a low logic level (0V).
+
+## Software analysis
+### main() function
