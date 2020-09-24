@@ -41,3 +41,13 @@ then the pins must be mounted exactly as shown in the figure (emitter connected 
 <p align="center">
   <img src="pic/2digits-real.png" width=200/>
 </p>
+
+## Design of the driving circuit of the common anodes
+The power supply to pins 9 and 4 of the 7-segment display (common anodes) cannot be supplied directly from the pins of the microcontroller because too much current would be required to power the lit LEDs (up to a maximum of 8 simultaneously). For this reason, a PNP type BJT (Bipolar Junction Transistor) transistor is interposed between the pin of the microcontroller and the common anode, controlled by a resistor based on approximately 10kΩ (see the following figure):
+<p align="center">
+  <img src="pic/bjt_out_schem.png" width=500/>
+</p>
+
+*Translation for the italian comment from the picture above: the two BC557B BJTs work as switches, controlled by pins P2.11 and P2.10 of the micro. When the pin is at logic low (logic negated) the corresponding BJT is a closed switch (feeds the 7-segment display digit).*
+
+Note that the transistors power the display LEDs when the logic value applied to the base is low (0V). Otherwise the LEDs of the corresponding digit are off (logic denied or low active).
