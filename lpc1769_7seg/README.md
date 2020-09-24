@@ -33,3 +33,11 @@ The following figure shows the assembly diagram of the proposed exercise:
 <p align="center">
   <img src="pic/7-segmenti_bb.png" width=800/>
 </p>
+Note that the two transistors used are polarized components (see the following figure):
+<p align="center">
+  <img src="pic/bjt_TO-92.png" width=200/>
+</p>
+then the pins must be mounted exactly as shown in the figure (emitter connected to the red power supply bar, collector connected to the common anode of the 7-segment display, base connected to the 10kΩ driving resistor). The 7-segment display also has an assembly order that includes decimal points at the bottom, as shown in the figure:
+<p align="center">
+  <img src="pic/2digits-real.png" width=200/>
+</p>
