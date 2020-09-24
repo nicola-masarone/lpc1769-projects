@@ -61,21 +61,21 @@ As for the cathodes of the LEDs, more or less what we saw in the LED project in 
 Note that in this case the command logic is inverted: to turn on the LED, the pin of the microcontroller must be at a low logic level (0V).
 
 ## Software analysis
-### main() function
+### main function
 Inside the main() function we find the few initial settings and the usual infinite while loop shown in the following figure:
 <p align="center">
   <img src="pic/main.png" width=800>
 </p>
 
 The first two instructions set the control pins of the microcontroller as an output, at a high logic level. This way all the display LEDs are off. The instruction lines relating to the System Tick Timer enable it with an interrupt for a count value of 1/100 of a second.
-### SysTick_Handler() interrupt handler
+### SysTick_Handler function
 Within the interrupt management function for the System Tick Timer we find the instructions for the alternating display of the digits on the display. Since the timer is programmed for a count of 1/100 of a second it means that the two digits are updated alternately at 100Hz, i.e. the single digit is updated at 50Hz, more than enough frequency to fool the eye.
 <p align="center">
   <img src="pic/systick.png" width=800>
 </p>
 
 Within the same manager, a counting cycle from 0 to 99 is carried out for the numbers to be shown on the display, with the value increasing every second. Still in the same manager, the single digits of the number to be displayed are obtained and the LED driving function setDigits (char digit) is called.
-### setDigits function (char digit)
+### setDigits function
 This function transforms the value of the digit to be displayed in combination of pins of the microcontroller to be placed at a low logic level, based on the display LEDs that must be turned on (see the following figure):
 <p align="center">
   <img src="pic/setdigits.png" width=500>
