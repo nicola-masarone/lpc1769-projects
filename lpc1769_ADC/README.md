@@ -22,7 +22,7 @@ For this section, what already seen in the [7-segment display management](../lpc
 <p align="center">
   <img src="pic/ADC_bb.png" width=800/>
 </p>
-Translation of the note in the assembly diagram: "the potentiometer can be replaced by the MCP9701 temperature sensor; in this case the yellow wire goes to the central pin of the sensor."
+Translation of the note in the assembly diagram: *the potentiometer can be replaced by the MCP9701 temperature sensor; in this case the yellow wire goes to the central pin of the sensor.*
 
 ## Potentiometer
 The component used to generate an adjustable voltage level is a potentiometer, which is a three-pin adjustable resistor, two extremes seeing the total resistance and a middle seeing a part of the total resistance based on the mechanical adjustment of the slider:
