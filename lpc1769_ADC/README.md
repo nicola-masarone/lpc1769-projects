@@ -43,3 +43,6 @@ The 3.3V power supply is just enough for the sensor which can have VDD input vol
 <p align="center">
   V<sub>OUT</sub>[mV] = T [°C] x 19.5 [mV/°C] + 400 [mV]
 </p>
+This relationship must obviously be used in the software for the correct representation of the data on the 7-segment display.
+## Software analysis
+As regards the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display (for which please refer to the [7-segment display management](../lpc1769_7seg#7-segment-display-management) experience.
