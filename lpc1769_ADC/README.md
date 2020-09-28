@@ -54,5 +54,10 @@ Among the main settings we find those relating to the ADC device:
   <img src="pic/main.png" width=800/>
 </p>
 This is activated (at Reset it is off), set in continuous conversion mode at the minimum possible speed (the temperature varies very slowly) and with interrupt activation at the end of each conversion.
+
 ### ADC_IRQHandler() interrupt handler
 This function is performed at the end of each conversion and does the bare minimum:
+<p align="center">
+  <img src="pic/ADC_IRQHandler.png" width=800/>
+</p>
+The result value is present in register *AD0DR0*, from *bit4* to *bit15*. With the *bitwise-and* operation we extract the 16 least significant bits from the *AD0DR0* register (which is 32-bit), then we shift 4 positions to the right to obtain the 12-bit value.
