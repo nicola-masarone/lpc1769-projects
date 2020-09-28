@@ -30,5 +30,6 @@ The component used to generate an adjustable voltage level is a potentiometer, w
   <img src="pic/pot_schem.png" width=250/>
 </p>
 By connecting one end to 3.3V and the other to ground we can obtain on the central pin an adjustable voltage value between 0V and 3.3V. This voltage level goes to the ADC converter which transforms it into a proportional number between 0 and 4095 (2<sup>12</sup>-1):
-
-$$N_{ADC}= V_{POT} \over V_{DD} 4095$$
+<p align="center">
+  <img src="pic/ADC_formula.png" width=200/>
+</p>
