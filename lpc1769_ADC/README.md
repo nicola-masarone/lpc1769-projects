@@ -19,3 +19,9 @@ An ADC has many features but the most important are certainly: number of bits th
 * an analog temperature sensor MCP9701 type
 ## Assembly diagram
 For this section, what already seen in the [7-segment display management](../lpc1769_7seg#7-segment-display-management) tutorial is practically repeated, except for the potentiometer or the temperature sensor connected to the ADC converter pin. The following figure shows the assembly diagram of the proposed exercise:
+<p align="center">
+  <img src="pic/ADC_bb.png" width=800/>
+</p>
+Translation of the note in the assembly diagram: "the potentiometer can be replaced by the MCP9701 temperature sensor; in this case the yellow wire goes to the central pin of the sensor."
+## Potentiometer
+The component used to generate an adjustable voltage level is a potentiometer, which is a three-pin adjustable resistor, two extremes seeing the total resistance and a middle seeing a part of the total resistance based on the mechanical adjustment of the slider:
