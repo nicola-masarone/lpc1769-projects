@@ -18,7 +18,7 @@ An ADC has many features but the most important are certainly: number of bits th
 * a potentiometer of about 20kΩ
 * an analog temperature sensor MCP9701 type
 ## Assembly diagram
-For this section, what already seen in the [7-segment display management](../lpc1769_7seg#7-segment-display-management) tutorial is practically repeated, except for the potentiometer or the temperature sensor connected to the ADC converter pin. The following figure shows the assembly diagram of the proposed exercise:
+For this section, what already seen in the *[7-segment display management](../lpc1769_7seg#7-segment-display-management)* tutorial is practically repeated, except for the potentiometer or the temperature sensor connected to the ADC converter pin. The following figure shows the assembly diagram of the proposed exercise:
 <p align="center">
   <img src="pic/ADC_bb.png" width=800/>
 </p>
@@ -47,7 +47,7 @@ The 3.3V power supply is just enough for the sensor which can have VDD input vol
 This relationship must obviously be used in the software for the correct representation of the data on the 7-segment display.
 
 ## Software analysis
-As regards the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display for which please refer to the [7-segment display management](../lpc1769_7seg#7-segment-display-management) experience.
+As regards the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display for which please refer to the *[7-segment display management](../lpc1769_7seg#7-segment-display-management)* experience.
 ### main() function
 Among the main settings we find those relating to the ADC device:
 <p align="center">
