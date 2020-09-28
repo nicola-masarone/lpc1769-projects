@@ -44,5 +44,12 @@ The 3.3V power supply is just enough for the sensor which can have VDD input vol
   V<sub>OUT</sub>[mV] = T [°C] x 19.5 [mV/°C] + 400 [mV]
 </p>
 This relationship must obviously be used in the software for the correct representation of the data on the 7-segment display.
+
 ## Software analysis
-As regards the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display (for which please refer to the [7-segment display management](../lpc1769_7seg#7-segment-display-management) experience.
+As regards the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display for which please refer to the [7-segment display management](../lpc1769_7seg#7-segment-display-management) experience.
+### main() function
+Among the main settings we find those relating to the ADC device:
+<p align="center">
+  <img src="pic/main.png" width=800/>
+</p>
+This is activated (at Reset it is off), set in continuous conversion mode at the minimum possible speed (the temperature varies very slowly) and with interrupt activation at the end of each conversion.
