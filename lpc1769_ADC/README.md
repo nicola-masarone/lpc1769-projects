@@ -62,3 +62,9 @@ This function is performed at the end of each conversion and does the bare minim
 </p>
 
 The result value is present in register *AD0DR0*, from *bit4* to *bit15*. With the *bitwise-and* operation we extract the 16 least significant bits from the *AD0DR0* register (which is 32-bit), then we shift 4 positions to the right to obtain the 12-bit value.
+
+### SysTick_Handler() interrupt handler
+In this function the management of the value to be displayed has been modified, deriving it from the result of the ADC conversion. The software below contains both the calculation for mounting with potentiometer and that for the temperature sensor:
+<p align="center">
+  <img src="pic/SysTick_Handler.png" width=800/>
+</p>
