@@ -60,4 +60,5 @@ This function is performed at the end of each conversion and does the bare minim
 <p align="center">
   <img src="pic/ADC_IRQHandler.png" width=800/>
 </p>
+
 The result value is present in register *AD0DR0*, from *bit4* to *bit15*. With the *bitwise-and* operation we extract the 16 least significant bits from the *AD0DR0* register (which is 32-bit), then we shift 4 positions to the right to obtain the 12-bit value.
