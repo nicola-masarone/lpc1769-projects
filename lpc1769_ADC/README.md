@@ -22,6 +22,7 @@ For this section, what already seen in the [7-segment display management](../lpc
 <p align="center">
   <img src="pic/ADC_bb.png" width=800/>
 </p>
+
 Translation of the note in the assembly diagram: *the potentiometer can be replaced by the MCP9701 temperature sensor; in this case the yellow wire goes to the central pin of the sensor.*
 
 ## Potentiometer
@@ -53,3 +54,5 @@ Among the main settings we find those relating to the ADC device:
   <img src="pic/main.png" width=800/>
 </p>
 This is activated (at Reset it is off), set in continuous conversion mode at the minimum possible speed (the temperature varies very slowly) and with interrupt activation at the end of each conversion.
+### ADC_IRQHandler() interrupt handler
+This function is performed at the end of each conversion and does the bare minimum:
