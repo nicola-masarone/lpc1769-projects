@@ -30,3 +30,11 @@ The analog section relating to the LEDs is made up of a current limiting resisto
 <p align="center">
   <img src="pic/output_LED_schem.png" width=250/>
 </p>
+For the sizing of the R_LED resistor we must take into account the output voltage of the logic gate of the microcontroller when it is at the high logic level (about 3.1V) and the threshold voltage of the red LED which is around 1.8V. Given that we want a current in the LED lower than 1mA, we calculate the value of R_LED with the following formula:
+<p align="center">
+  <img src="pic/Rled_formula.png" width=300/>
+</p>
+By choosing a slightly higher standard value, we ensure a current lower than 1mA; this guarantees a correct functioning of the output ports since in the datasheet we find a guaranteed minimum value of 4mA:
+<p align="center">
+  <img src="pic/Ioh_datasheet.png" width=700/>
+</p>
