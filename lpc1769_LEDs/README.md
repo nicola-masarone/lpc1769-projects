@@ -20,3 +20,7 @@ The experience has as its objective the lighting in sequence of 8 LEDs with adju
 + connection cables from breadboard
 ## Assembly diagram
 The following figure shows the assembly scheme provided for the experience, made with the free Fritzing drawing program:
+<p align="center">
+  <img src="pic/LEDs_bb.png" width=800/>
+</p>
+Note that the limiting resistors are 1.5kΩ and the LEDs are all mounted with the cathode (short lead, flat side of the LED) on the ground line of the blue breadboard.
