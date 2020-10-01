@@ -50,6 +50,7 @@ The input pin has the internal pull-up resistor activated; in this way when the 
 </p>
 
 Translation of picture notes written in Italian language: *released button, falling edge, pushed button, raising edge, released button*
+
 When the button is pressed, the logic level of the input goes from high (3V) to low (0V); this is the falling edge which will be used as the interrupt event for the P0.9 input.
 
 ## Software analysis
