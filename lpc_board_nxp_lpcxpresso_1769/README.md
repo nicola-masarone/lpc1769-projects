@@ -14,7 +14,7 @@ Copyright(C) NXP Semiconductors, 2012
  * in the software without notification. NXP Semiconductors also makes no
  * representation or warranty that such application will be suitable for the
  * specified use without further testing or modification.
- *
+ 
  * Permission to use, copy, modify, and distribute this software and its
  * documentation is hereby granted, under NXP Semiconductors' and its
  * licensor's relevant copyrights in the software, without fee, provided that it
