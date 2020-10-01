@@ -1,5 +1,5 @@
 # lpc1769-projects.
-Simple projects for lpc1769 microcontoller from NXP.
+Simple projects for lpc1769 microcontroller from NXP.
 
 Each folder beginning with *lpc1769* contains a separate project, with a description either for software either for hardware.
 
