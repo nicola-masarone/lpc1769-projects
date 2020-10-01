@@ -38,3 +38,13 @@ By choosing a slightly higher standard value, we ensure a current lower than 1mA
 <p align="center">
   <img src="pic/Ioh_datasheet.png" width=700/>
 </p>
+
+## Push button input circuit design
+The analog section relating to the push-button input is shown in the following figure:
+<p align="center">
+  <img src="pic/input_button_schem.png" width=200/>
+</p>
+The input pin has the internal pull-up resistor activated; in this way when the external button is open (at rest) the logic level of the door is high (about 3V). When we press the external button, the switch closes and the door logic level drops (0V). In the following graph we report what has been said, highlighting the falling and rising edges of the input signal:
+<p align="center">
+  <img src="pic/input_signal.png" width=400/>
+</p>
