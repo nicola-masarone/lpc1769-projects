@@ -55,3 +55,16 @@ When the button is pressed, the logic level of the input goes from high (3V) to 
 ## Software analysis
 Let's now proceed to the study of the various sections contained in the software project lpc1769_LEDs.
 ### main() function
+Inside the main() function we find the few settings needed to start the program.
+<p align="center">
+  <img src="pic/main.png" width=800/>
+</p>
+We note that the first instruction sets as output the pins of port 2 ranging from P2.0 to P2.7, placed in both logical sequence and on the expansion connector of the development board for LPC1769.
+
+The following instructions set the SysTickTimer to operate with the maximum possible period and to activate the interrupt at the end of each counting cycle.
+
+The last block of instructions concerns pin P0.9 which is set as an input with pull-up (default at the reset of the microcontroller) and the interrupt on the falling edge of the input signal is activated. For a detailed discussion of interrupts and their management with NVIC, please refer to a specific lesson.
+
+At the end of these few initial settings, the program enters an infinite while loop waiting for an interrupt event that wakes it from waiting: __asm volatile ("wfi").
+### SysTick_Handler() interrupt handler
+At the end of a SysTickTimer counting period, the program automatically jumps to the following SysTick_Handler() management function:
