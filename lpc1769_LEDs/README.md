@@ -68,3 +68,7 @@ The last block of instructions concerns pin P0.9 which is set as an input with p
 At the end of these few initial settings, the program enters an infinite while loop waiting for an interrupt event that wakes it from waiting: __asm volatile ("wfi").
 ### SysTick_Handler() interrupt handler
 At the end of a SysTickTimer counting period, the program automatically jumps to the following SysTick_Handler() management function:
+<p align="center">
+  <img src="pic/SysTick_Handler.png" width=600/>
+</p>
+The purpose of this function is to always turn on one LED at a time, changing its position at each interrupt activation cycle. The variable static int ledON contains the position of the LED to be turned on (initialized to 0) and retains this value even when exiting the function (static attribute). The ledOFF variable instead contains the position of the LED to be turned off and is equal to the position preceding ledON. Since the possible positions range from 0 to 7, the limit values are checked with adjustments if necessary (a value less than 0 becomes 7 and a value greater than 7 becomes 0). In this way, at each completion of a SysTickTimer counting cycle, an LED next to the previous cycle is turned on while the one that was on before is turned off (traveling LED).
