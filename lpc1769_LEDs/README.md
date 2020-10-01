@@ -24,3 +24,9 @@ The following figure shows the assembly scheme provided for the experience, made
   <img src="pic/LEDs_bb.png" width=800/>
 </p>
 Note that the limiting resistors are 1.5kΩ and the LEDs are all mounted with the cathode (short lead, flat side of the LED) on the ground line of the blue breadboard.
+
+## LED driver circuit design
+The analog section relating to the LEDs is made up of a current limiting resistor placed in series with the LED. Everything is powered by the output of the microcontroller's GPIO port, according to the diagram in the following figure:
+<p align="center">
+  <img src="pic/output_LED_schem.png" width=250/>
+</p>
