@@ -7,9 +7,9 @@ The component used in the experience is shown in the following figure:
 <p align="center">
   <img src="pic/LED_RGB.png" width=500/>
 </p>
-The shorter lead (flat side of the LED head) corresponds to the cathode of the red color; common anode, green cathode and blue cathode follow.
 
+The shorter lead (flat side of the LED head) corresponds to the cathode of the red color; common anode, green cathode and blue cathode follow.
 ## The PWM (Pulse Width Modulator) peripheral
 The PWM can realize square waves with duty-cycle (ratio between the high part of the signal and the repetition period) adjustable from 0% to 100%. Given the type of mounting chosen (common anode of the RGB LED to + VDD) the colors of the LED will turn on during the low part of the signal and will turn off during the high part (logic negated).
 More information on the PWM functional block is available on the dedicated page: [*PWM: digital output with analogue possibilities*](PWM_block.md)
-
+## Used material
