@@ -30,4 +30,6 @@ The circuit assembly diagram is shown below:
 
 Translation of the picture note: *In place of the RGB LED, 3 red LEDs can be mounted, all with 1.5 kΩ limiting resistor, by connecting the common anodes to a single power supply.*
 
-Note that instead of the RGB LED it is possible to replace 3 red LEDs with an anode in common with V<sub>DD</sub>, all with 1.5kΩ limiting resistors.
+## Software analysis
+As for the software, the parts relating to the PWM setting will be highlighted.
+### main() function
