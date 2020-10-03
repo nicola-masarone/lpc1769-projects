@@ -18,3 +18,7 @@ To modify the luminous intensity of the LED, adjusting it between the maximum va
 </p>
 
 In this way the LED will turn on at certain times (high voltage level) and will turn off at others (low voltage level). If the alternation of switch-off and switch-on instants is fast enough, our eye will perceive an average light intensity between maximum and minimum, proportional to the duty-cycle. Ultimately, to apply the PWM technique it is necessary to set a signal repetition period and a time interval within this period during which the signal is at the high logic level (the low one derives from it by difference).
+## Description of the PWM block of LPC1769
+### Basic configuration
+#### PWM block power supply
+Per attivare il blocco PWM è necessario alimentarlo impostando a 1 il bit6 del registro PCONP (0x400FC0C4)
