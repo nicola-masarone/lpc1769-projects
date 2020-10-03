@@ -1,2 +1,3 @@
 # PWM: digital output with analogue possibilities
+<img align="left" src="pic/pwmLEDs.jpg" width=150/>
 The PWM (Pulse Width Modulator) output allows various functions: from the modulation of signals for communications to the power management of LEDs and electric motors. With only two voltage levels available (0V and 3.3V), thanks to the variable duration of the upper and lower parts of the output, the PWM functional block is able to regulate the power supplied from a minimum of 0% to a maximum of 100%, with extreme flexibility.
