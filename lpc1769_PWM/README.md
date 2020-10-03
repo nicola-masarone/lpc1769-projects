@@ -3,4 +3,4 @@ With this experience, students learn to manage an RGB-type color LED using the P
 ## Introduction
 An RGB type color LED is basically the union of 3 different colored LEDs: red, green and blue. The driving of the single colors is realized with the PWM outputs of the microcontroller; in this way we can control the luminous intensity of the component colors and thus adjust the overall resulting color.
 ## The RGB LED
-Il componente usato nell'esperienza è riportato nella figura seguente:
+The component used in the experience is shown in the following figure:
