@@ -58,3 +58,6 @@ During the PWM counting phase it is possible to define particular actions based 
   <img src="pic/PWMMR0R_bit.png" width=600/>
 </p>
 
+### General operation
+Il blocco PWM è abbastanza complesso e riassumere tutte le funzionalità disponibili richiederebbe molto tempo. Nel seguito verrà esposta solo una presentazione semplificata del funzionamento generale rimandando ai progetti del corso LPC1769dev i dettagli applicativi.
+
