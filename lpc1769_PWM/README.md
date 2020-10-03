@@ -32,4 +32,10 @@ Translation of the picture note: *In place of the RGB LED, 3 red LEDs can be mou
 
 ## Software analysis
 As for the software, the parts relating to the PWM setting will be highlighted.
-### main() function
+### *main()* function
+Among the initial settings we find those of PWM:
+<p align="center">
+  <img src="pic/main.png" width=800/>
+</p>
+
+The first three PWM channels are activated by setting them to the initial value of 100%; in this way the three RGB colors are turned off. Note that the PWM refresh period is set to 50Hz to avoid flickering in the lighting. The other initial setting concerns the three buttons connected to P0.7, P0.8 and P0.9 for which the interrupt function is also activated.
