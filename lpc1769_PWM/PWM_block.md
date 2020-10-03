@@ -59,5 +59,18 @@ During the PWM counting phase it is possible to define particular actions based 
 </p>
 
 ### General operation
-Il blocco PWM è abbastanza complesso e riassumere tutte le funzionalità disponibili richiederebbe molto tempo. Nel seguito verrà esposta solo una presentazione semplificata del funzionamento generale rimandando ai progetti del corso LPC1769dev i dettagli applicativi.
+PWM blocking is quite complex and summing up all the available features would take a long time. In the following, only a simplified presentation of the general functioning will be exposed, referring to the projects of the LPC1769dev course the application details.
+
+To obtain the PWM functionality, a timer / counter with a 32-bit register (PWM1TC - 0x40018008) is used which increases its count value at each clock pulse (by default equal to CCLK / 4), assuming that the register of prescale (PWM1PR - 0x4001800C) is left at the default value of 0.
+
+The count value contained in PWM1TC is continuously compared with the values ​​contained in the Match Registers: MR0 (PWM1MR0 - 0x40018018), MR1 (PWM1MR1 - 0x4001 801C), MR6 (PWM1MR6 - 0x40018048), the last six being respectively associated with PWM1 outputs, PWM6.
+
+To obtain a single PWM signal (for example PWM1.1 on pin P2.0) it is sufficient to use two match registers: MR0 for counting the total period and MR1 for counting the high part of the output (whose relationship with the total period returns the duty-cycle).
+
+At the beginning of each count of the total period (PWM1TC = 0) the PWM1.1 output automatically goes to the high level. When the PWM1TC count value reaches the value contained in MR1 (PWM1TC = MR1) the output goes to the low logic level; when the PWM1TC count value reaches the value contained in MR0 (PWM1TC = MR0) the count restarts from zero and the output returns to the high logic level.
+
+We note that the values ​​loaded into the match registers (MR0, MR1 and others) have no immediate effect on the shape of the PWM output. For this to happen, a further command with the PWM Latch Enable Register (PWM1LER - 0x40018050) is required. Only after setting the bits corresponding to the various Match Registers to 1 do they become effective for the PWM (see table 453 below).
+<p align="center">
+  <img src="pic/table453.png" width=600/>
+</p>
 
