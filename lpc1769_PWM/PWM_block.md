@@ -21,4 +21,15 @@ In this way the LED will turn on at certain times (high voltage level) and will 
 ## Description of the PWM block of LPC1769
 ### Basic configuration
 #### PWM block power supply
-Per attivare il blocco PWM è necessario alimentarlo impostando a 1 il bit6 del registro PCONP (0x400FC0C4)
+To activate the PWM block it must be powered by setting bit6 of the PCONP register to 1 (0x400FC0C4)
+<p align="center">
+  <img src="pic/PCONP_reg.jpeg" width=600/>
+</p>
+
+Picture red note translation: *setting this bit to 1 powers the PWM block*.
+
+We note that the default setting (value at the microcontroller Reset) already provides power to the PWM block.
+<p align="center">
+  <img src="pic/PCPWM1_bit.png" width=600/>
+</p>
+
