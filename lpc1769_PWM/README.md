@@ -13,3 +13,18 @@ The shorter lead (flat side of the LED head) corresponds to the cathode of the r
 The PWM can realize square waves with duty-cycle (ratio between the high part of the signal and the repetition period) adjustable from 0% to 100%. Given the type of mounting chosen (common anode of the RGB LED to + VDD) the colors of the LED will turn on during the low part of the signal and will turn off during the high part (logic negated).
 More information on the PWM functional block is available on the dedicated page: [*PWM: digital output with analogue possibilities*](PWM_block.md)
 ## Used material
++ Development board for LPC1769 with expansion connectors
++ USB cable for connection to PC
++ Development station with MCUXpresso
++ Software project lpc1769_PWM
++ 1 breadboard
++ 1 RGB LED
++ 1 x 1.5kΩ limiting resistor, 2 x 220Ω limiting resistors
++ 3 buttons
++ connection cables for breadboard
+## Assembly diagram
+The circuit assembly diagram is shown below:
+<p align="center">
+  <img src="pic/PWM_LED_Color_bb.png" width=800/>
+</p>
+
