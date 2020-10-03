@@ -33,3 +33,15 @@ We note that the default setting (value at the microcontroller Reset) already pr
   <img src="pic/PCPWM1_bit.png" width=600/>
 </p>
 
+#### PWM block clock
+L'impostazione successiva riguarda la frequenza di clock utilizzata dal PWM. Questa può essere selezionata grazie al registro PCLKSEL0 (0x400FC1A8)
+<p align="center">
+  <img src="pic/PCLKSEL0_reg.png" width=600/>
+</p>
+
+by setting PCLK_PWM1 (bit 13:12) to the desired value according to the following table:
+<p align="center">
+  <img src="pic/table42.png" width=600/>
+</p>
+
+At Reset (default value 00) the peripheral receives a clock with a frequency equal to 1/4 that of the CPU (CCLK / 4). Since in our case CCLK = 96MHz the PWM will receive a clock equal to: 96MHz / 4 = 24MHz.
