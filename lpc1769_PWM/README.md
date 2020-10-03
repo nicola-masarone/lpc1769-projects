@@ -39,3 +39,10 @@ Among the initial settings we find those of PWM:
 </p>
 
 The first three PWM channels are activated by setting them to the initial value of 100%; in this way the three RGB colors are turned off. Note that the PWM refresh period is set to 50Hz to avoid flickering in the lighting. The other initial setting concerns the three buttons connected to P0.7, P0.8 and P0.9 for which the interrupt function is also activated.
+### *EINT3_IRQHandler()* interrupt handler
+The function manages the inputs on the three buttons (one for each color of the RGB LED), intercepting the falling edges of the input signals:
+<p align="center">
+  <img src="pic/EINT3_IRQHandler.png" width=800/>
+</p>
+
+For each input the current duty-cycle is updated from 100% (color off) to 0% (color at maximum intensity) in 10% steps. Therefore, with each click on a button, the relative color changes from minimum to maximum intensity, in 10% increments. It should be noted that the apparent variation (perceived by the eye) of the intensity of the colors does not always appear linear due to the response of the human eye.
