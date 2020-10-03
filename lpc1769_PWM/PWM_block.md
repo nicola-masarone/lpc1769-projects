@@ -45,3 +45,16 @@ by setting PCLK_PWM1 (bit 13:12) to the desired value according to the following
 </p>
 
 At Reset (default value 00) the peripheral receives a clock with a frequency equal to 1/4 that of the CPU (CCLK / 4). Since in our case CCLK = 96MHz the PWM will receive a clock equal to: 96MHz / 4 = 24MHz.
+#### PWM block output pin selection
+To assign an output pin to the PWM block we need to use the PINSEL registers. If, for example, we want to activate the PWM1.1 output (channel 1 of PWM1) on pin P2.0 then it is necessary to set bits 1: 0 of register PINSEL4 (0x4002C010) to the value 01.
+<p align="center">
+  <img src="pic/table84.png" width=600/>
+</p>
+
+We note that, unlike the previous settings, this is necessary since the default value (00) provides for the GPIO functionality on P2.0 and not that of PWM1.1.
+#### Interrupt management of the PWM block
+During the PWM counting phase it is possible to define particular actions based on the occurrence or otherwise of certain logical conditions. These conditions are obtained for our purposes with the bits of the PWM1MCR register (0x40018014). In particular, we will use the counting restart function when the value loaded in MR0 is reached by setting bit1 (PWMMR0R) in register PWM1MCR to 1, thus obtaining a periodic signal of MR0 period.
+<p align="center">
+  <img src="pic/PWMMR0R_bit.png" width=600/>
+</p>
+
