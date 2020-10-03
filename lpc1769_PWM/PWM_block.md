@@ -74,3 +74,26 @@ We note that the values ​​loaded into the match registers (MR0, MR1 and othe
   <img src="pic/table453.png" width=600/>
 </p>
 
+### Practical example
+We want to obtain a PWM signal on the PWM1.1 output with a frequency of 50Hz and duty-cycle variable between 0% and 100%. First we obtain the period corresponding to the desired frequency:
+<p align="center">
+  <img src="pic/period_formula.png" width=200/>
+</p>
+
+At this point it is necessary to calculate the value for the MR0 register equivalent to 20ms. We know that the PWM count clock (at default settings) has a speed equal to 1/4 of the CPU, in our case 96MHz / 4 = 24MHz. If we count 24000000 of clock pulses we get a period of 1 second (1 Hz); since we want to have a frequency 50 times higher (50Hz) we have to count a number of clock pulses equal to 24000000/50 = 480000.
+
+Subsequently we can load in MR1 a value between 0 (duty-cycle 0%) and 480000 (duty-cycle 100%).
+
+The necessary settings are then:
+
+*PINSEL4 |= 0b000001; // connect PWM 1.1 output to pin P2.0
+PWM1PCR |= 0b1000000000; // enable PWM1 output*
+
+*PWM1MR0 = 480000; // prepare the value for the 20ms period for MR0
+PWM1MR1 = 480000/2; // prepare for MR1 a duty cycle of 50%
+PWM1LER |= 0b11; // make the prepared values for MR0, MR1 take effect*
+
+*PWM1MCR |= 0b10; // PWMMR0R = 1 for the period count to restart automatically
+PWM1TCR = 0b1001; // start PWM: PWM Enable + Counter Enable*
+
+If we apply this PWM signal to an LED to modify its luminous intensity we only have to change the value of the MR1 register so that the duty-cycle also changes: low duty-cyle => low luminous intensity, high duty-cycle => high luminous intensity.
