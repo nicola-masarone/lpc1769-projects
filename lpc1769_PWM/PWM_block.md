@@ -5,14 +5,14 @@ The PWM (Pulse Width Modulator) output allows various functions: from the modula
 ## PWM technique and its applications
 Pulse Width Modulation is a technique that allows the generation of pulses having all the same amplitude but with programmable duration, from a minimum to a predetermined maximum. The uses of PWM are many, from adjusting the light intensity of an LED to adjusting the rotation speed of an electric motor. Here we will refer to the application with LED because it is easy to realize with the available components.
 ### On/Off management of an LED
-From the theory we know that to be turned on an LED must be powered with a voltage higher than the threshold voltage and connected in series to a current limiting resistor; we also know that the light intensity of the LED is proportional to the intensity of the current passing through it. Note the threshold voltage V<sub>D</sub> and the supply voltage V<sub>CC</sub>, we can adjust the intensity of the current I<sub>LED</sub> (and therefore the brightness) with the R<sub>LED</sub> series resistor sized with the following formula:
+From the theory we know that to be turned on an LED must be powered with a voltage higher than the threshold voltage and connected in series to a current limiting resistor; we also know that the light intensity of the LED is proportional to the intensity of the current passing through it. If we know the threshold voltage V<sub>D</sub> and the supply voltage V<sub>CC</sub>, we can adjust the intensity of the current I<sub>LED</sub> (and therefore the brightness) with the R<sub>LED</sub> series resistor sized with the following formula:
 <p align="center">
   <img src="pic/RLED_formula.png" width=150/>
 </p>
 
 If the V<sub>CC</sub> power is supplied by a digital output of the microcontroller (3.3V) then we can only turn on the LED with a preset intensity.
 ### PWM management of an LED
-To modify the luminous intensity of the LED, adjusting it between the maximum value (corresponding to the ILED of the previous formula) and zero, we can apply a square wave with a fixed amplitude (3.3V) and variable duty-cycle; the duty-cycle is the ratio between the duration of the high voltage level and the repetition period of the square wave. In the following figure we see three examples of duty-cycle: at 10%, at 50% and at 90%.
+To modify the luminous intensity of the LED, adjusting it between the maximum value (corresponding to the I<sub>LED</sub> of the previous formula) and zero, we can apply a square wave with a fixed amplitude (3.3V) and variable duty-cycle; the duty-cycle is the ratio between the duration of the high voltage level and the repetition period of the square wave. In the following figure we see three examples of duty-cycle: at 10%, at 50% and at 90%.
 <p align="center">
   <img src="pic/duty_cycle.png" width=300/>
 </p>
@@ -34,7 +34,7 @@ We note that the default setting (value at the microcontroller Reset) already pr
 </p>
 
 #### PWM block clock
-L'impostazione successiva riguarda la frequenza di clock utilizzata dal PWM. Questa può essere selezionata grazie al registro PCLKSEL0 (0x400FC1A8)
+The next setting concerns the clock frequency used by the PWM. This can be selected thanks to the PCLKSEL0 register (0x400FC1A8)
 <p align="center">
   <img src="pic/PCLKSEL0_reg.png" width=600/>
 </p>
@@ -53,7 +53,7 @@ To assign an output pin to the PWM block we need to use the PINSEL registers. If
 
 We note that, unlike the previous settings, this is necessary since the default value (00) provides for the GPIO functionality on P2.0 and not that of PWM1.1.
 #### Interrupt management of the PWM block
-During the PWM counting phase it is possible to define particular actions based on the occurrence or otherwise of certain logical conditions. These conditions are obtained for our purposes with the bits of the PWM1MCR register (0x40018014). In particular, we will use the counting restart function when the value loaded in MR0 is reached by setting bit1 (PWMMR0R) in register PWM1MCR to 1, thus obtaining a periodic signal of MR0 period.
+During the PWM counting phase it is possible to define particular actions based on the occurrence of certain logical conditions. These conditions are obtained for our purposes with the bits of the PWM1MCR register (0x40018014). In particular, we will use the counting restart function when the value loaded in MR0 is reached by setting bit1 (PWMMR0R) in register PWM1MCR to 1, thus obtaining a periodic signal of MR0 period.
 <p align="center">
   <img src="pic/PWMMR0R_bit.png" width=600/>
 </p>
@@ -63,7 +63,7 @@ PWM blocking is quite complex and summing up all the available features would ta
 
 To obtain the PWM functionality, a timer / counter with a 32-bit register (PWM1TC - 0x40018008) is used which increases its count value at each clock pulse (by default equal to CCLK / 4), assuming that the register of prescale (PWM1PR - 0x4001800C) is left at the default value of 0.
 
-The count value contained in PWM1TC is continuously compared with the values ​​contained in the Match Registers: MR0 (PWM1MR0 - 0x40018018), MR1 (PWM1MR1 - 0x4001 801C), MR6 (PWM1MR6 - 0x40018048), the last six being respectively associated with PWM1 outputs, PWM6.
+The count value contained in PWM1TC is continuously compared with the values ​​contained in the Match Registers: MR0 (PWM1MR0 - 0x40018018), MR1 (PWM1MR1 - 0x4001 801C), ... MR6 (PWM1MR6 - 0x40018048), the last six being respectively associated with PWM1, ... PWM6 outputs.
 
 To obtain a single PWM signal (for example PWM1.1 on pin P2.0) it is sufficient to use two match registers: MR0 for counting the total period and MR1 for counting the high part of the output (whose relationship with the total period returns the duty-cycle).
 
