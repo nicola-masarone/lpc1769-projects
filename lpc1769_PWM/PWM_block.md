@@ -86,14 +86,14 @@ Subsequently we can load in MR1 a value between 0 (duty-cycle 0%) and 480000 (du
 
 The necessary settings are then:
 
-*PINSEL4 |= 0b000001; // connect PWM 1.1 output to pin P2.0
-PWM1PCR |= 0b1000000000; // enable PWM1 output*
+    PINSEL4 |= 0b000001; // connect PWM 1.1 output to pin P2.0
+    PWM1PCR |= 0b1000000000; // enable PWM1 output
 
-*PWM1MR0 = 480000; // prepare the value for the 20ms period for MR0
-PWM1MR1 = 480000/2; // prepare for MR1 a duty cycle of 50%
-PWM1LER |= 0b11; // make the prepared values for MR0, MR1 take effect*
+    PWM1MR0 = 480000; // prepare the value for the 20ms period for MR0
+    PWM1MR1 = 480000/2; // prepare for MR1 a duty cycle of 50%
+    PWM1LER |= 0b11; // make the prepared values for MR0, MR1 take effect
 
-*PWM1MCR |= 0b10; // PWMMR0R = 1 for the period count to restart automatically
-PWM1TCR = 0b1001; // start PWM: PWM Enable + Counter Enable*
+    PWM1MCR |= 0b10; // PWMMR0R = 1 for the period count to restart automatically
+    PWM1TCR = 0b1001; // start PWM: PWM Enable + Counter Enable
 
 If we apply this PWM signal to an LED to modify its luminous intensity we only have to change the value of the MR1 register so that the duty-cycle also changes: low duty-cyle => low luminous intensity, high duty-cycle => high luminous intensity.
