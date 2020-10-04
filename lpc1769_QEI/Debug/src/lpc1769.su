@@ -1,0 +1,3 @@
+lpc1769.c:47:6:setDigits	16	static
+lpc1769.c:90:6:SysTick_Handler	16	static
+lpc1769.c:121:5:main	4	static
