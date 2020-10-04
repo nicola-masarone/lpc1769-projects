@@ -9,6 +9,6 @@ The QEI interface present inside the LPC1769 microcontroller allows the manageme
 
 <img align="left" src="pic/QE_schem.png" width=100/> Given the internal electrical configuration of the encoder we can hypothesize the connection to ground of the COM pin (common reference to the two switches) and the connection of channels A and B to the respective inputs of the QEI interface, equipped with internal pull-ups. The presence of the internal pull-ups guarantees, during the rotation of the selector, the generation of signals similar to those shown in the following figure:
 <p align="center">
-  <img src="QE_signals.png" width=400/>
+  <img src="pic/QE_signals.png" width=200/>
 </p>
 
