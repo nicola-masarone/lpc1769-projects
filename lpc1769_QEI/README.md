@@ -22,7 +22,7 @@ The following figure shows what is needed to carry out the experiment on breadbo
 
 Note that the input pins of the QEI interface are shown on the pads present between the two 27-pin connectors, namely PAD3 (P1[20]) and PAD6 (P1[23]) of the development board. These PADs must be equipped with suitably welded connectors in order to make the connection with the wires supplied in the kit. The rotary switch features a side with three pins (channels A, B and COM) and a side with two pins (unused in this experience). It is advisable to slightly bend the lateral metal supports of the rotary switch to allow the correct insertion of the pins in the breadboard. As regards the data display section, the assembly follows what has already been seen in the [*7-segment display management*](../lpc1769_7seg) project.
 
-## Firmware di gestione
+## Firmware
 In the following lines we will analyze the specific software parts for the management of the QEI interface, highlighting only the differences compared to what has already been seen for the [*7-segment display management*](../lpc1769_7seg). The firmware project can be downloaded from this same repository.
 
 ### *main()* function
