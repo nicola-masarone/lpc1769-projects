@@ -43,3 +43,11 @@ In the following image we find the code for the interrupt management function ge
   <img src="pic/SysTick_Handler.png" width=800/>
 </p>
 
+The value to be displayed is obtained directly from the QEIPOS register containing the count of the electrical impulses reached the QEI interface. In our case the value is divided by two to display a data corresponding to the mechanical clicks of the rotary selector so that the user finds a correspondence between his feeling of use of the rotary encoder and the data shown on the display.
+
+We note that after a complete rotation the counter goes from 23 to 0 (counterclockwise rotation) or from 0 to 23 (clockwise rotation).
+
+## Proposed changes
++ Modify the firmware so that the count occurs in the opposite way to the direction of rotation clockwise / counterclockwise. How can the same result be achieved without changing the firmware but only the hardware?
++ Modify the firmware and hardware so that upon pressing the selector (corresponding to the third internal switch), the display counter is reset.
++ Change the firmware and hardware so that an RGB LED with three different colors lights up during rotation / counting: BLUE between 0 and 7, GREEN between 8 and 15, RED between 16 and 23.
