@@ -12,3 +12,11 @@ The QEI interface present inside the LPC1769 microcontroller allows the manageme
   <img src="pic/QE_signals.png" width=400/>
 </p>
 
+As can be seen from the image, the two signals are out of phase with each other by 90 ° (ie by a quarter of a period); we note that by turning the selector in one direction, signal A will precede signal B, while by turning the selector in the reverse direction, signal B will precede signal A. This will make it possible to count the impulses up or down, according to the direction of rotation.
+
+## Mount on breadboard
+The following figure shows what is needed to carry out the experiment on breadboard:
+<p align="center">
+  <img src="pic/rotary_switch_bb.png" width=800/>
+</p>
+
