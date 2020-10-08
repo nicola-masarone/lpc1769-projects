@@ -85,5 +85,18 @@ Within the same *SysTick_Handler()* function a piece of code for the display tes
   <img src="pic/test_count.png" width=230/>
 </p>
 
-With the statement *if(time_counter> 1)* we make sure that every two interrupt calls the value shown on the display is changed. This is stored counter *val_counter* which is incremented from 0 to 1999 and then back to 0. The individual digits of the counter are extracted with modulo 10 (*%10*) and division by 10 (*/10*) operations. The *setdigit1(), setdigit2(), setdigit3() and setdigit4()* functions were implemented in another file.
+With the statement *if(time_counter>1)* we make sure that every two interrupt calls the value shown on the display is changed. This is stored counter *val_counter* which is incremented from 0 to 1999 and then back to 0. The individual digits of the counter are extracted with modulo 10 (*%10*) and division by 10 (*/10*) operations. The *setdigit1(), setdigit2(), setdigit3() and setdigit4()* functions were implemented in another file.
 ### The functions of setting digits and signs
+In the *lcd.c* file, the functions for setting the digits and signs on the display have been implemented. Moving code to other files was necessary for program order reasons. We note that all the functions of *lcd.c* do nothing but update the logical value of the variables associated with all segments of the *LCD*. Since these functions are very similar to each other we see only a few.
+#### *SetDigit1()* function
+This function has the purpose of turning on or not turning on the digit 1 on the left of the display.
+<p align="center">
+  <img src="pic/setDigit1.png" width=300/>
+</p>
+
+If the value of the parameter passed to the function (*val*) is different from 0 we intend to turn on the segment of the digit 1, so we set the relative variable *lcd_1BC* to 1, otherwise we set it to 0.
+#### *SetDigit2()* function
+The management function of digit 2 is similar to those already seen for the *7-segment LED* display:
+<p align="center">
+  <img src="pic/setDigit2.png" width=300/>
+</p>
