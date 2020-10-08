@@ -13,12 +13,12 @@ The display used is a 3 1/2 digit, typically used in portable instruments such a
 
 The names of the LCD segments corresponding to the pins are shown in another image taken from the datasheet:
 <p align="center">
-  <img src="pic/lcd_screen.png" width=500/>
+  <img src="pic/lcd_screen.png" width=400/>
 </p>
 
 With 3E, for example, the E segment of the digit 3 is indicated; with 2A the segment A of the digit 2. The segments in the digit are organized as in the LED ones, but for convenience we report it in the following figure:
 <p align="center">
-  <img src="pic/lcd_digit.png" width=150/>
+  <img src="pic/lcd_digit.png" width=100/>
 </p>
 
 ## Mount on breadboard
