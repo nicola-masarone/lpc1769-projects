@@ -7,3 +7,18 @@ Liquid Crystal Displays (LCDs) are widely used devices for displaying data. Some
 From the figure on the side it is clear that the segment lights up (Lit) when the voltage between Common and Segment is different from zero (i.e. when the signal on Common is different from that on Segment). Furthermore, when this happens, the value is alternated so as not to damage the segment.
 ## Characteristics of the display used
 The display used is a 3 1/2 digit, typically used in portable instruments such as multimeter or temperature meter. The extremely small datasheet can be downloaded from here. As you can see, the device has 40 pins, not all used, documented in the following table:
+<p align="center">
+  <img src="pic/lcd_pinout.png" width=400/>
+</p>
+
+The names of the LCD segments corresponding to the pins are shown in another image taken from the datasheet:
+<p align="center">
+  <img src="pic/lcd_screen.png" width=500/>
+</p>
+
+With 3E, for example, the E segment of the digit 3 is indicated; with 2A the segment A of the digit 2. The segments in the digit are organized as in the LED ones, but for convenience we report it in the following figure:
+<p align="center">
+  <img src="pic/lcd_digit.png" width=150/>
+</p>
+
+## Mount on breadboard
