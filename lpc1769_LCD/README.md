@@ -49,7 +49,10 @@ The following figure shows the LCD display backplane signal management code, wir
 </p>
 
 The *lcd_BP* variable contains the current logical value of the *backplane* signal. With instruction:
+
     lcd_BP = !lcd_BP;
 we invert the logic value at each interrupt trip, generating a square wave at 32 Hz. Subsequently with the instruction:
+
     FIO0MASK = ~(1<<9);
 we apply a mask on port P0 to make only bit9 (P0.9) editable. We note that the expression to the right of the equal holds:
+*<p align="center">~(1<<9) = 111111111111111111111110111111111</p>*
