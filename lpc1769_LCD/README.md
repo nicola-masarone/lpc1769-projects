@@ -98,5 +98,10 @@ If the value of the parameter passed to the function (*val*) is different from 0
 #### *SetDigit2()* function
 The management function of digit 2 is similar to those already seen for the *7-segment LED* display:
 <p align="center">
-  <img src="pic/setDigit2.png" width=300/>
+  <img src="pic/setDigit2.png" width=330/>
+</p>
+
+With a *switch* statement, of which we report only the first *case*s, we distinguish the segments to be signaled as on or off based on the figure to be displayed. For example, if we want the digit 0 we need all the segments of the digit 2 turned on except the segment *g*, which is in the center of the digit; in the same way for all the other values of digit 2, up to 9. At the end of the *switch* instruction we use the *default* selector to be able to turn off the digit completely (just send a value not between 0 and 9):
+<p align="center">
+  <img src="pic/default.png" width=500/>
 </p>
