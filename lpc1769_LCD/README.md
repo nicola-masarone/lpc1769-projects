@@ -6,4 +6,9 @@ Liquid Crystal Displays (LCDs) are widely used devices for displaying data. Some
 <img align="right" src="pic/lcd_struct.png" width=150/> The organization of the segments is shown in the figure to the side. The backplane (indicated in the figure as Common Plane) represents a common reference plane with respect to which all the segments in the foreground of the display are powered. In practice, a segment lights up if the potential at its pin is different from the potential on the backplane pin; the segment is turned off if it has the same potential as the backplane. Since we want the current in the segments to continuously change direction then we will send a square wave signal of suitable frequency (usually above 30Hz to avoid flickering) on the backplane pin and square wave signals with the same frequency on the segment pins, with voltage value equal to the backplane to keep segments off or different value to keep segments on.
 <img align="left" src="pic/lcd_waveform-static_en.png" width=300/> From the figure on the side it is clear that the segment lights up (Lit) when the voltage between Common and Segment is different from zero (i.e. when the signal on Common is different from that on Segment). Furthermore, when this happens, the value is alternated so as not to damage the segment.
 
+
+
+
+
 ## Characteristics of the display used
+The display used is a 3 1/2 digit, typically used in portable instruments such as multimeter or temperature meter. The extremely small datasheet can be downloaded from here. As you can see, the device has 40 pins, not all used, documented in the following table:
