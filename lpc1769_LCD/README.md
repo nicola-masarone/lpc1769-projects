@@ -41,3 +41,9 @@ The few instructions given only concern the setting of quite a few pins of the P
 *<p align="center">96000000/64 - 1</p>*
 In this way we guarantee a timer frequency of 64 Hz, corresponding to a time interval of 1/64 of a second (i.e. 15,625 ms).
 ### The *SysTick_Handler()* function
+We said that the interrupt handling function of the SysTick Timer is invoked every 15,625 ms. After a time equal to this interval, the backplane signal inverts its logic value, therefore the value of the total period is equal to double: 15.625ms • 2 = 31.25 ms, corresponding to a frequency of 32 Hz (frequency sufficient for a stable display display).
+#### *Backplane* signal update
+The following figure shows the LCD display backplane signal management code, wired on pin P0.9 of the microcontroller:
+<p align="center">
+  <img src="pic/backplane_refresh.png" width=800/>
+</p>
