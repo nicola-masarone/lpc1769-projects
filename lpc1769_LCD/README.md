@@ -22,3 +22,12 @@ With 3E, for example, the E segment of the digit 3 is indicated; with 2A the seg
 </p>
 
 ## Mount on breadboard
+Given the width of the display, the assembly requires the use of two small breadboards side by side or, equivalently, a large breadboard, as seen in the following figure:
+<p align="center">
+  <img src="pic/LCD_bb.png" width=800/>
+</p>
+
+Note the presence of two 15kΩ pull-up resistors between the 3.3V power supply and pins 25-26 of the display, corresponding to pins P0.27 and P0.28 of the microcontroller which are open-drain as they can be used for the bus I2C. The 3.3V power supply must obviously be brought to the breadboard with a special wire. There are 30 connection cables, so 10 additional cables are required compared to those supplied by the kits.
+
+## Description of the software used
+Premise: the "C" program seems very long but in reality it is simply repetitive, that is, it should be written better, more compactly. The reason it was written this way is to make it clearer for those who don't have much programming experience. The compressed file of the project can be downloaded from this same repository.
