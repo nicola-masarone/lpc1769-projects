@@ -56,3 +56,8 @@ we invert the logic value at each interrupt trip, generating a square wave at 32
     FIO0MASK = ~(1<<9);
 we apply a mask on port P0 to make only bit9 (P0.9) editable. We note that the expression to the right of the equal holds:
 *<p align="center">~(1<<9) = 111111111111111111111110111111111</p>*
+
+We then update the value of P0.9 with the instruction:
+
+    FIO0PIN = lcd_BP<<9;
+In practice we attribute to *P0.9* the current value of the *lcd_BP* variable which alternates its logical value at each call of the *SysTick_Handler()* function.
