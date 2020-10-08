@@ -27,7 +27,7 @@ Given the width of the display, the assembly requires the use of two small bread
   <img src="pic/LCD_bb.png" width=800/>
 </p>
 
-Note the presence of two 15kΩ pull-up resistors between the 3.3V power supply and pins 25-26 of the display, corresponding to pins P0.27 and P0.28 of the microcontroller which are open-drain as they can be used for the bus I2C. The 3.3V power supply must obviously be brought to the breadboard with a special wire. There are 30 connection cables, so 10 additional cables are required compared to those supplied by the kits.
+Note the presence of two 15kΩ *pull-up* resistors between the 3.3V power supply and pins 25-26 of the *display*, corresponding to pins *P0.27* and *P0.28* of the microcontroller which are *open-drain* as they can be used for the bus *I2C*. The 3.3V power supply must obviously be brought to the breadboard with a special wire. There are 30 connection cables, so 10 additional cables are required compared to those supplied by the kits.
 
 ## Description of the software used
 Premise: the "C" program seems very long but in reality it is simply repetitive, that is, it should be written better, more compactly. The reason it was written this way is to make it clearer for those who don't have much programming experience. The compressed file of the project can be downloaded from this same repository.
@@ -37,13 +37,13 @@ Let's start as usual by taking a look at the *main()* function, shown in the fol
   <img src="pic/main.png" width=800/>
 </p>
 
-The few instructions given only concern the setting of quite a few pins of the P0, P1 and P2 port as output for the management of the LCD segments. Follow the usual instructions for the *System Tick Timer* which is used here to generate the constant frequency square wave for the backplane pin. The chosen timer value is obtained with the operation:
+The few instructions given only concern the setting of quite a few pins of the P0, P1 and P2 port as output for the management of the LCD segments. Follow the usual instructions for the *System Tick Timer* which is used here to generate the constant frequency square wave for the *backplane* pin. The chosen timer value is obtained with the operation:
 *<p align="center">96000000/64 - 1</p>*
-In this way we guarantee a timer frequency of 64 Hz, corresponding to a time interval of 1/64 of a second (i.e. 15,625 ms).
+In this way we guarantee a timer frequency of *64 Hz*, corresponding to a time interval of 1/64 of a second (i.e. 15.625 ms).
 ### The *SysTick_Handler()* function
-We said that the interrupt handling function of the SysTick Timer is invoked every 15,625 ms. After a time equal to this interval, the backplane signal inverts its logic value, therefore the value of the total period is equal to double: 15.625ms • 2 = 31.25 ms, corresponding to a frequency of 32 Hz (frequency sufficient for a stable display display).
+We said that the interrupt handling function of the *SysTick Timer* is invoked every 15.625 ms. After a time equal to this interval, the *backplane* signal inverts its logic value, therefore the value of the total period is equal to double: 15.625ms • 2 = 31.25 ms, corresponding to a frequency of 32 Hz (frequency sufficient for a stable display display).
 #### *Backplane* signal update
-The following figure shows the LCD display backplane signal management code, wired on pin P0.9 of the microcontroller:
+The following figure shows the LCD display *backplane* signal management code, wired on pin *P0.9* of the microcontroller:
 <p align="center">
   <img src="pic/backplane_refresh.png" width=800/>
 </p>
@@ -51,13 +51,13 @@ The following figure shows the LCD display backplane signal management code, wir
 The *lcd_BP* variable contains the current logical value of the *backplane* signal. With instruction:
 
     lcd_BP = !lcd_BP;
-we invert the logic value at each interrupt trip, generating a square wave at 32 Hz. Subsequently with the instruction:
+we invert the logic value at each interrupt trip, generating a square wave at *32 Hz*. Subsequently with the instruction:
 
     FIO0MASK = ~(1<<9);
-we apply a mask on port P0 to make only bit9 (P0.9) editable. We note that the expression to the right of the equal holds:
+we apply a mask on port *P0* to make only *bit9 (P0.9)* editable. We note that the expression to the right of the equal holds:
 *<p align="center">~(1<<9) = 111111111111111111111110111111111</p>*
 
-We then update the value of P0.9 with the instruction:
+We then update the value of *P0.9* with the instruction:
 
     FIO0PIN = lcd_BP<<9;
 In practice we attribute to *P0.9* the current value of the *lcd_BP* variable which alternates its logical value at each call of the *SysTick_Handler()* function.
@@ -70,12 +70,12 @@ Below we see the *TX* segment management code (*minus sign* of the display), wir
 The first instruction applies the mask to port *P0* to make only *bit8* editable:
 
     FIO0MASK = ~(1<<8);
-The next statement uses an *if-else* structure with a logical condition based on the current value of the *lcd_TX* variable. If this variable is different from zero it signals that the respective *TX* segment must be displayed otherwise it must be turned off. In the first case (*TX* on) the instruction is executed:
+The next statement uses an *if-else* structure with a logical condition based on the current value of the *lcd_TX* variable. If this variable is different from zero it signals that the respective *TX* segment must be displayed otherwise it must be turned off. In the first case (*TX* on) this instruction is executed:
 
     FIO0PIN = (!lcd_BP)<<8;
 which assigns to pin *P0.8* a logic value opposite to the *backplane* (thus current flows through the *TX* segment).
 
-In the second case (*TX* off) the instruction is executed:
+In the second case (*TX* off) this other instruction is executed:
 
     FIO0PIN = lcd_BP<<8;
 which assigns the same logic value as the *backplane* to pin *P0.8* (so no current flows in the *TX* segment).
@@ -85,11 +85,11 @@ Within the same *SysTick_Handler()* function a piece of code for the display tes
   <img src="pic/test_count.png" width=230/>
 </p>
 
-With the statement *if(time_counter>1)* we make sure that every two interrupt calls the value shown on the display is changed. This is stored counter *val_counter* which is incremented from 0 to 1999 and then back to 0. The individual digits of the counter are extracted with modulo 10 (*%10*) and division by 10 (*/10*) operations. The *setdigit1(), setdigit2(), setdigit3() and setdigit4()* functions were implemented in another file.
-### The functions of setting digits and signs
+With the statement *if(time_counter>1)* we make sure that every two interrupt calls the value shown on the display is changed. This is stored in the counter *val_counter* which is incremented from 0 to 1999 and then back to 0. The individual digits of the counter are extracted with modulo 10 (*%10*) and division by 10 (*/10*) operations. The *setdigit1(), setdigit2(), setdigit3() and setdigit4()* functions have been implemented in another file.
+### The functions for setting digits and signs
 In the *lcd.c* file, the functions for setting the digits and signs on the display have been implemented. Moving code to other files was necessary for program order reasons. We note that all the functions of *lcd.c* do nothing but update the logical value of the variables associated with all segments of the *LCD*. Since these functions are very similar to each other we see only a few.
 #### *SetDigit1()* function
-This function has the purpose of turning on or not turning on the digit 1 on the left of the display.
+This function has the purpose of turning on or turning off the digit 1 on the left of the display.
 <p align="center">
   <img src="pic/setDigit1.png" width=300/>
 </p>
