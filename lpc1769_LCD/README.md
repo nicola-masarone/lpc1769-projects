@@ -84,3 +84,6 @@ Within the same *SysTick_Handler()* function a piece of code for the display tes
 <p align="center">
   <img src="pic/test_count.png" width=230/>
 </p>
+
+With the statement *if(time_counter> 1)* we make sure that every two interrupt calls the value shown on the display is changed. This is stored counter *val_counter* which is incremented from 0 to 1999 and then back to 0. The individual digits of the counter are extracted with modulo 10 (*%10*) and division by 10 (*/10*) operations. The *setdigit1(), setdigit2(), setdigit3() and setdigit4()* functions were implemented in another file.
+### The functions of setting digits and signs
