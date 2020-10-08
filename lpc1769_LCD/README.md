@@ -79,3 +79,8 @@ In the second case (*TX* off) the instruction is executed:
 
     FIO0PIN = lcd_BP<<8;
 which assigns the same logic value as the *backplane* to pin *P0.8* (so no current flows in the *TX* segment).
+#### Test count
+Within the same *SysTick_Handler()* function a piece of code for the display test has been obtained. From the following figure we notice what is achieved:
+<p align="center">
+  <img src="pic/test_count.png" width=230/>
+</p>
