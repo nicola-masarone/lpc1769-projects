@@ -47,3 +47,7 @@ The following figure shows the LCD display backplane signal management code, wir
 <p align="center">
   <img src="pic/backplane_refresh.png" width=800/>
 </p>
+
+The *lcd_BP* variable contains the current logical value of the *backplane* signal. With instruction:
+
+    lcd_BP = !lcd_BP;
