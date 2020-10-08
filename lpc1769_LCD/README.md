@@ -62,7 +62,7 @@ We then update the value of P0.9 with the instruction:
     FIO0PIN = lcd_BP<<9;
 In practice we attribute to *P0.9* the current value of the *lcd_BP* variable which alternates its logical value at each call of the *SysTick_Handler()* function.
 #### Segment signal update
-Below we see the *TX* segment management code (*minus sign* of the display), wired on pin P0.8 of the microcontroller; obviously what will be explained will also apply to all the other segments of the display.
+Below we see the *TX* segment management code (*minus sign* of the display), wired on pin *P0.8* of the microcontroller; obviously what will be explained will also apply to all the other segments of the display.
 <p align="center">
   <img src="pic/TX_refresh.png" width=800/>
 </p>
