@@ -31,3 +31,13 @@ Note the presence of two 15kΩ pull-up resistors between the 3.3V power supply a
 
 ## Description of the software used
 Premise: the "C" program seems very long but in reality it is simply repetitive, that is, it should be written better, more compactly. The reason it was written this way is to make it clearer for those who don't have much programming experience. The compressed file of the project can be downloaded from this same repository.
+### The *main()* function
+Let's start as usual by taking a look at the *main()* function, shown in the following figure:
+<p align="center">
+  <img src="pic/main.png" width=800/>
+</p>
+
+The few instructions given only concern the setting of quite a few pins of the P0, P1 and P2 port as output for the management of the LCD segments. Follow the usual instructions for the *System Tick Timer* which is used here to generate the constant frequency square wave for the backplane pin. The chosen timer value is obtained with the operation:
+*<p align="center">96000000/64 - 1</p>*
+In this way we guarantee a timer frequency of 64 Hz, corresponding to a time interval of 1/64 of a second (i.e. 15,625 ms).
+### The *SysTick_Handler()* function
