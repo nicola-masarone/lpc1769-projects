@@ -61,3 +61,21 @@ We then update the value of P0.9 with the instruction:
 
     FIO0PIN = lcd_BP<<9;
 In practice we attribute to *P0.9* the current value of the *lcd_BP* variable which alternates its logical value at each call of the *SysTick_Handler()* function.
+#### Segment signal update
+Below we see the *TX* segment management code (*minus sign* of the display), wired on pin P0.8 of the microcontroller; obviously what will be explained will also apply to all the other segments of the display.
+<p align="center">
+  <img src="pic/TX_refresh.png" width=800/>
+</p>
+
+The first instruction applies the mask to port *P0* to make only *bit8* editable:
+
+    FIO0MASK = ~(1<<8);
+The next statement uses an *if-else* structure with a logical condition based on the current value of the *lcd_TX* variable. If this variable is different from zero it signals that the respective *TX* segment must be displayed otherwise it must be turned off. In the first case (*TX* on) the instruction is executed:
+
+    FIO0PIN = (!lcd_BP)<<8;
+which assigns to pin *P0.8* a logic value opposite to the *backplane* (thus current flows through the *TX* segment).
+
+In the second case (*TX* off) the instruction is executed:
+
+    FIO0PIN = lcd_BP<<8;
+which assigns the same logic value as the *backplane* to pin *P0.8* (so no current flows in the *TX* segment).
