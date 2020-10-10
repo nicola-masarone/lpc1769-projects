@@ -44,13 +44,13 @@ The following figure shows the breadboard mounting plan including both the ultra
 
 Note that the power supply represented with the batteries must actually be supplied from a 5V source and that the references of the two existing power supplies (external 5V and micro 3.3V) must be joined together to provide a common GND.
 
-## HC-SR04 <=> LPC1769 interfacing
+### HC-SR04 <=> LPC1769 interfacing
 The logic signals shared between the ultrasound module (powered at 5V) and microcontroller (powered at 3.3V) are *Trigger* and *Echo*.
-### *Trigger*
+#### *Trigger*
 <img align="right" src="pic/TTL_levels.png" width=300/> The *Trigger* signal is a command that goes from the microcontroller (output) to the ultrasound module. The latter expects a *TTL* signal (0-5V) while the microcontroller can only output signals (0-3.3V). Actually the logic level at 3.3V is within the high logic level acceptance range in the *TTL* specification (2-5V), as can be deduced from the following figure.
 
 <img align="left" src="pic/opendrain.jpg" width=150/> Nevertheless, we take the opportunity to use a feature present on the output ports of the microcontroller and that is the *open-drain* setting. This feature allows you to connect an output pin of the microcontroller to a different power supply (in this case 5V) by means of an external *pull-up* resistor, as shown in the figure on the side. When the output transistor conducts the logic level V<sub>OUT</sub> is low (0V); when the transistor is off, the logic level V<sub>OUT</sub> is high and equal to V<sub>DD</sub> (in our case 5V). In this way the output of a 3.3V powered microcontroller varies between 0-5V logic levels. We note that in doing this it is advisable to disable the *pull-ups* inside the microcontroller to avoid circuit overlaps that would lead to unwanted parallels.
-### *Echo*
+#### *Echo*
 The *Echo* signal provides a pulse of variable duration, proportional to the delay suffered by the ultrasonic echo in its path, and of 5V amplitude. This can be connected directly to an input of the microcontroller as the *datasheet* of the micro ensures that the input pins are *5V tolerant*.
 <p align="center">
   <img src="pic/5V_tolerant.png" width=600/>
@@ -66,6 +66,7 @@ with *note 1* clarifying the compatibility to 5V:
   <img src="pic/5Vtolerant_note.png" width=600/>
 </p>
 
-## Unified power supply
+### Unified power supply
 Once the *debug* phase is finished, if you want to use the microcontroller without connecting to the PC via USB cable, it is necessary to supply it with power from the external 5V. To achieve this, simply connect an additional red cable (not shown in the previous assembly plan) between the external 5V supply and the *EXT_POWX* pin, position 2 of the expansion connector of the development board for LPC1769.
 
+## Firmware
