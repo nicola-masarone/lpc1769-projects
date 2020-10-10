@@ -32,3 +32,4 @@ The working signals of the module are shown in the following image:
   <img src="pic/hcsr04_signal.png" width=600/>
 </p>
 
+To start the measurement, it is necessary to send a TTL pulse (5V) with a duration of at least 10μs on the Trig pin and then wait for the response, from which the time elapsed for the echo return is obtained. If an excessive time elapses (about 12ms, greater than that expected for the maximum distance of 4m), the measurement is considered invalid.
