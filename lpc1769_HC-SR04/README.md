@@ -108,7 +108,7 @@ The following image shows the code of the *initLCD()* function:
   <img src="pic/initLCD.png" width=650/>
 </p>
 
-All the pins of the microcontroller responsible for driving the [liquid crystal display](../lpc1769_LCD) are set in output (remember that at *Reset* all the *GPIO* pins are in input).
+All the pins of the microcontroller responsible for driving the [*liquid crystal display*](../lpc1769_LCD) are set in output (remember that at *Reset* all the *GPIO* pins are in input).
 
 ### *SysTickTimer* Handler
 The *SysTickTimer* interrupt causes the execution of the code shown in the following image (representation of an initial fragment):
