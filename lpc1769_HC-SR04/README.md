@@ -24,3 +24,11 @@ The module pinout is shown in the following figure:
 <p align="center">
   <img src="pic/hcsr04_pinout.png" width=150/>
 </p>
+
+where, apart from the obvious meaning of *Vcc* and *GND*, *Trig* represents the input pin to provide the measurement start command while *Echo* is the output pin, on which we read an impulse of duration proportional to the measured time.
+
+The working signals of the module are shown in the following image:
+<p align="center">
+  <img src="pic/hcsr04_signal.png" width=600/>
+</p>
+
