@@ -40,3 +40,6 @@ The following figure shows the breadboard mounting plan including both the ultra
   <img src="pic/HC-SR04_bb.png" width=900/>
 </p>
 
+*Left side note translation: external 5V power supply and 3.3V board power supply must have common ground (GND). The 15kΩ pull-up on Trig-P0.10 is used to let the microcontroller board communicate with logic levels at 5V*
+
+Note that the power supply represented with the batteries must actually be supplied from a 5V source and that the references of the two existing power supplies (external 5V and micro 3.3V) must be joined together to provide a common GND.
