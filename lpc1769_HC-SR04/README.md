@@ -93,3 +93,18 @@ The following image shows the code for the preparation of *Timer3* as a pulse ge
 The first instruction powers *Timer3* which is off when the micro is *reset*. The second instruction connects pin *P0.10* to *MAT3.0*, that is to channel *0* of *Timer3* for the pulse generation function. The next instruction disables all internal resistors of pin *P0.10* as we intend to use an external 5V pull-up. The last instruction of the first group enables the *OpenDrain* functionality on *P0.10*.
 
 Thereafter, the stop of *Timer3* is programmed when the preset count is reached, after 15μs, with the reset of the logic level on *P0.10*. Finally, an initial value is set at low *P0.10*.
+
+### *InitTimer2Capture()* function
+The code for this function is presented in the following image; it must prepare the duration measurement of the *Echo* signal returned by the ultrasound module.
+<p align="center">
+  <img src="pic/initTimer2.png" width=800/>
+</p>
+
+In the first instruction, *Timer2* is powered (turned off when the microswitch is reset) then *P0.4* is connected to channel *CAP2.0* (*timer2* capture channel *0*). In subsequent instructions, the internal *pull-up* and *pull-down* resistors are disabled. The *Timer2* control register provides for the storage of the count value and the *interrupts* are activated both on the rising edge (start of *Echo* pulse) and of descent (end of *Echo* pulse). In the last instruction, the interrupt signals are routed through the NVIC module.
+
+### *InitLCD()* function
+The following image shows the code of the *initLCD()* function:
+<p align="center">
+  <img src="pic/initLCD.png" width=700/>
+</p>
+
