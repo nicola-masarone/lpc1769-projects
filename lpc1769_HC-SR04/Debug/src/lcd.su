@@ -1,0 +1,11 @@
+lcd.c:14:6:initLCD	4	static
+lcd.c:29:6:setDigit1	16	static
+lcd.c:40:6:setDigit2	16	static
+lcd.c:150:6:setDigit3	16	static
+lcd.c:260:6:setDigit4	16	static
+lcd.c:369:6:setDP1	16	static
+lcd.c:378:6:setDP2	16	static
+lcd.c:387:6:setDP3	16	static
+lcd.c:396:6:setCOL	16	static
+lcd.c:405:6:setSign	16	static
+lcd.c:427:6:setLoBat	16	static

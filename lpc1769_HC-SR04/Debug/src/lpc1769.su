@@ -1,0 +1,5 @@
+lpc1769.c:23:6:SysTick_Handler	16	static
+lpc1769.c:173:6:TIMER2_IRQHandler	4	static
+lpc1769.c:193:6:initTimer2Capture	4	static
+lpc1769.c:204:6:initTimer3Match	4	static
+lpc1769.c:222:5:main	8	static
