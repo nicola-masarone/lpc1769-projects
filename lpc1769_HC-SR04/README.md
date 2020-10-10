@@ -13,7 +13,7 @@ The distance is equal to half of the total distance s, therefore:
 </p>
 
 ## The HC-SR04 module
-This module integrates an ultrasonic emitter, an ultrasonic receiver and an electronic management part for the generation of a signal with a duration proportional to the echo delay. The [document](hcsr04.pdf) containing some technical specifications provides us with a table with indications of the electrical parameters:
+This module integrates an ultrasonic emitter, an ultrasonic receiver and an electronic management part for the generation of a signal with a duration proportional to the echo delay. The [*document*](hcsr04.pdf) containing some technical specifications provides us with a table with indications of the electrical parameters:
 <p align="center">
   <img src="pic/hcsr04_params.png" width=600/>
 </p>
@@ -32,7 +32,7 @@ The working signals of the module are shown in the following image:
   <img src="pic/hcsr04_signal.png" width=600/>
 </p>
 
-To start the measurement, it is necessary to send a TTL pulse (5V) with a duration of at least 10μs on the Trig pin and then wait for the response, from which the time elapsed for the echo return is obtained. If an excessive time elapses (about 12ms, greater than that expected for the maximum distance of 4m), the measurement is considered invalid.
+To start the measurement, it is necessary to send a TTL pulse (5V) with a duration of at least 10μs on the *Trig* pin and then wait for the response, from which the time elapsed for the echo return is obtained. If an excessive time elapses (about 12ms, greater than that expected for the maximum distance of 4m), the measurement is considered invalid.
 
 ## Assembly plan
 The following figure shows the breadboard mounting plan including both the ultrasonic module and the LCD display already presented in the [*liquid crystal display*](../lpc1769_LCD) project, to which reference should be made for the general operation with the LPC1769 development board for microcontroller.
@@ -51,7 +51,7 @@ The logic signals shared between the ultrasound module (powered at 5V) and micro
 
 <img align="left" src="pic/opendrain.jpg" width=150/> Nevertheless, we take the opportunity to use a feature present on the output ports of the microcontroller and that is the *open-drain* setting. This feature allows you to connect an output pin of the microcontroller to a different power supply (in this case 5V) by means of an external *pull-up* resistor, as shown in the figure on the side. When the output transistor conducts the logic level V<sub>OUT</sub> is low (0V); when the transistor is off, the logic level V<sub>OUT</sub> is high and equal to V<sub>DD</sub> (in our case 5V). In this way the output of a 3.3V powered microcontroller varies between 0-5V logic levels. We note that in doing this it is advisable to disable the *pull-ups* inside the microcontroller to avoid circuit overlaps that would lead to unwanted parallels.
 #### *Echo*
-The *Echo* signal provides a pulse of variable duration, proportional to the delay suffered by the ultrasonic echo in its path, and of 5V amplitude. This can be connected directly to an input of the microcontroller as the *datasheet* of the micro ensures that the input pins are *5V tolerant*.
+The *Echo* signal provides a pulse of variable duration, proportional to the delay by the ultrasonic echo in its path, and of 5V amplitude. This can be connected directly to an input of the microcontroller as the *datasheet* of the micro ensures that the input pins are *5V tolerant*.
 <p align="center">
   <img src="pic/5V_tolerant.png" width=600/>
 </p>
