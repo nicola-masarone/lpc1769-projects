@@ -36,3 +36,7 @@ To start the measurement, it is necessary to send a TTL pulse (5V) with a durati
 
 ## Assembly plan
 The following figure shows the breadboard mounting plan including both the ultrasonic module and the LCD display already presented in the [liquid crystal display project](../lpc1769_LCD), to which reference should be made for the general operation with the LPC1769 development board for microcontroller.
+<p align="center">
+  <img src="pic/HC-SR04_bb.png" width=900/>
+</p>
+
