@@ -13,3 +13,7 @@ The distance is equal to half of the total distance s, therefore:
 </p>
 
 ## The HC-SR04 module
+This module integrates an ultrasonic emitter, an ultrasonic receiver and an electronic management part for the generation of a signal with a duration proportional to the echo delay. The document containing some technical specifications provides us with a table with indications of the electrical parameters:
+<p align="center">
+  <img src="pic/d_formula.png" width=130/>
+</p>
