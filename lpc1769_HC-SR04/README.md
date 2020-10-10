@@ -74,3 +74,22 @@ The structure of the C code used is quite simple. The part of the firmware relat
 
 The project files are downloadable from this same repository.
 
+### *main()* function
+The following figure shows the code of the *main()* function:
+<p align="center">
+  <img src="pic/main.png" width=800/>
+</p>
+
+The first lines of the code set the *SysTick Timer* to generate an interrupt signal with a frequency of 64 Hz, dictated by the *SYSTICK_VAL* value. The initialization functions of the two Timers and the display are then invoked: *initTimer3Match()*, *initTimer2Capture()* and *initLCD()*.
+
+At the end of the initializations the infinite *while* loop begins in which the processor goes into standby waiting for the interrupt signal of the *SysTick Timer*.
+
+### *InitTimer3Match()* function
+The following image shows the code for the preparation of *Timer3* as a pulse generator of preset duration for the *Trigger* signal (start of measurement command for the ultrasound module).
+<p align="center">
+  <img src="pic/initTimer3.png" width=800/>
+</p>
+
+The first instruction powers *Timer3* which is off when the micro is *reset*. The second instruction connects pin *P0.10* to *MAT3.0*, that is to channel *0* of *Timer3* for the pulse generation function. The next instruction disables all internal resistors of pin *P0.10* as we intend to use an external 5V pull-up. The last instruction of the first group enables the *OpenDrain* functionality on *P0.10*.
+
+Thereafter, the stop of *Timer3* is programmed when the preset count is reached, after 15μs, with the reset of the logic level on *P0.10*. Finally, an initial value is set at low *P0.10*.
