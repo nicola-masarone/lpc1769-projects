@@ -17,3 +17,10 @@ This module integrates an ultrasonic emitter, an ultrasonic receiver and an elec
 <p align="center">
   <img src="pic/hcsr04_params.png" width=600/>
 </p>
+
+The power supply and therefore the input/output logic levels are at 5V, which must be kept in mind when using the LPC1769 microcontroller which operates at 3.3V
+
+The module pinout is shown in the following figure:
+<p align="center">
+  <img src="pic/hcsr04_pinout.png" width=150/>
+</p>
