@@ -105,6 +105,22 @@ In the first instruction, *Timer2* is powered (turned off when the microswitch i
 ### *InitLCD()* function
 The following image shows the code of the *initLCD()* function:
 <p align="center">
-  <img src="pic/initLCD.png" width=700/>
+  <img src="pic/initLCD.png" width=650/>
+</p>
+
+All the pins of the microcontroller responsible for driving the [liquid crystal display](../lpc1769_LCD) are set in output (remember that at *Reset* all the *GPIO* pins are in input).
+
+### *SysTickTimer* Handler
+The *SysTickTimer* interrupt causes the execution of the code shown in the following image (representation of an initial fragment):
+<p align="center">
+  <img src="pic/SysTick_Handler.png" width=800/>
+</p>
+
+Recall that the *SysTickTimer* clicks 64 times per second; the first 64 times (therefore for a time interval of 1 second) the if structure is skipped by executing the following code (not displayed) to refresh the data on the LCD display (for more details see the [Liquid crystal display](../lpc1769_LCD) project). After this interval, the code in the *if* structure is executed, obtaining the distance in cm from the *TimerVal* variable (duration of the *Echo* pulse in μs). This variable is global and is updated with the result of the last *Echo* measurement in the *TIMER2_IRQHandler()* presented later. In the following lines, the 4 digits that make up the distance value in centimeters are obtained. Finally, *Timer3* is launched to generate a new 15μs impulse for the *Trigger*.
+
+### *Timer2* Handler
+The *TIMER2_IRQHandler* is shown in the following figure:
+<p align="center">
+  <img src="pic/TIMER2_IRQHandler.png" width=700/>
 </p>
 
