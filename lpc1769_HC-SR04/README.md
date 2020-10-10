@@ -124,3 +124,9 @@ The *TIMER2_IRQHandler* is shown in the following figure:
   <img src="pic/TIMER2_IRQHandler.png" width=700/>
 </p>
 
+Recall that this manager is performed both on the rising edge of *P0.4* (start of the *Echo* pulse) and on the falling edge (end of the *Echo* pulse). To distinguish the two cases, the bit4 of *FIO0PIN* is tested: if it is high we are in the presence of the rising edge, the *Timer2* is reset and started for the measurement. When bit4 is low, the falling edge has arrived: *Timer2* is stopped and the duration between the two edges is recorded in the *TimerVal* variable (in μs).
+
+## Possible improvements
++ Distance measurement currently predicts a constant speed of sound in air but in reality it depends on the ambient temperature. A temperature measurement functionality could be added to appropriately correct the distance data.
++ The project could be modified to perform measurements that are no longer cyclical (as now, once a second) but on command, by means of a measurement start key.
++ Wanting to mimic the behavior of the parking sensors, the management of a buzzer could be added which activates with a sound of increasing frequency when the measured distance value falls below a certain threshold.
