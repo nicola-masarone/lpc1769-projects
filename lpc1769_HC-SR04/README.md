@@ -51,4 +51,21 @@ The logic signals shared between the ultrasound module (powered at 5V) and micro
 
 <img align="left" src="pic/opendrain.jpg" width=150/> Nevertheless, we take the opportunity to use a feature present on the output ports of the microcontroller and that is the *open-drain* setting. This feature allows you to connect an output pin of the microcontroller to a different power supply (in this case 5V) by means of an external *pull-up* resistor, as shown in the figure on the side. When the output transistor conducts the logic level V<sub>OUT</sub> is low (0V); when the transistor is off, the logic level V<sub>OUT</sub> is high and equal to V<sub>DD</sub> (in our case 5V). In this way the output of a 3.3V powered microcontroller varies between 0-5V logic levels. We note that in doing this it is advisable to disable the *pull-ups* inside the microcontroller to avoid circuit overlaps that would lead to unwanted parallels.
 ### *Echo*
-The *Echo* signal provides a pulse of variable duration, proportional to the delay suffered by the ultrasonic echo in its path, and of 5V amplitude. This can be connected directly to an input of the microcontroller as the datasheet of the micro ensures that the input pins are 5V tolerant.
+The *Echo* signal provides a pulse of variable duration, proportional to the delay suffered by the ultrasonic echo in its path, and of 5V amplitude. This can be connected directly to an input of the microcontroller as the *datasheet* of the micro ensures that the input pins are *5V tolerant*.
+<p align="center">
+  <img src="pic/5V_tolerant.png" width=600/>
+</p>
+
+In particular, the pin *P0.4* used by us to read the *Echo* signal is defined as follows:
+<p align="center">
+  <img src="pic/P04.png" width=600/>
+</p>
+
+with *note 1* clarifying the compatibility to 5V:
+<p align="center">
+  <img src="pic/5Vtolerant_note.png" width=600/>
+</p>
+
+## Unified power supply
+Once the *debug* phase is finished, if you want to use the microcontroller without connecting to the PC via USB cable, it is necessary to supply it with power from the external 5V. To achieve this, simply connect an additional red cable (not shown in the previous assembly plan) between the external 5V supply and the *EXT_POWX* pin, position 2 of the expansion connector of the development board for LPC1769.
+
