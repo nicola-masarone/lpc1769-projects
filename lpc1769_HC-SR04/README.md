@@ -100,7 +100,7 @@ The code for this function is presented in the following image; it must prepare 
   <img src="pic/initTimer2.png" width=800/>
 </p>
 
-In the first instruction, *Timer2* is powered (turned off when the microswitch is reset) then *P0.4* is connected to channel *CAP2.0* (*timer2* capture channel *0*). In subsequent instructions, the internal *pull-up* and *pull-down* resistors are disabled. The *Timer2* control register provides for the storage of the count value and the *interrupts* are activated both on the rising edge (start of *Echo* pulse) and of descent (end of *Echo* pulse). In the last instruction, the interrupt signals are routed through the NVIC module.
+In the first instruction, *Timer2* is powered (turned off when the microswitch is reset) then *P0.4* is connected to channel *CAP2.0* (*timer2* capture channel *0*). In subsequent instructions, the internal *pull-up* and *pull-down* resistors are disabled. The *Timer2* control register provides for the storage of the count value and the *interrupts* are activated both on the rising edge (start of *Echo* pulse) and falling edge (end of *Echo* pulse). In the last instruction, the interrupt signals are routed through the NVIC module.
 
 ### *InitLCD()* function
 The following image shows the code of the *initLCD()* function:
@@ -116,7 +116,7 @@ The *SysTickTimer* interrupt causes the execution of the code shown in the follo
   <img src="pic/SysTick_Handler.png" width=800/>
 </p>
 
-Recall that the *SysTickTimer* clicks 64 times per second; the first 64 times (therefore for a time interval of 1 second) the if structure is skipped by executing the following code (not displayed) to refresh the data on the LCD display (for more details see the [*liquid crystal display*](../lpc1769_LCD) project). After this interval, the code in the *if* structure is executed, obtaining the distance in cm from the *TimerVal* variable (duration of the *Echo* pulse in μs). This variable is global and is updated with the result of the last *Echo* measurement in the *TIMER2_IRQHandler()* presented later. In the following lines, the 4 digits that make up the distance value in centimeters are obtained. Finally, *Timer3* is launched to generate a new 15μs impulse for the *Trigger*.
+Recall that the *SysTickTimer* clicks 64 times per second; the first 64 times (therefore for a time interval of 1 second) the *if* structure is skipped by executing the following code (not displayed) to refresh the data on the LCD display (for more details see the [*liquid crystal display*](../lpc1769_LCD) project). After this interval, the code in the *if* structure is executed, obtaining the distance in cm from the *TimerVal* variable (duration of the *Echo* pulse in μs). This variable is global and is updated with the result of the last *Echo* measurement in the *TIMER2_IRQHandler()* presented later. In the following lines, the 4 digits that make up the distance value in centimeters are obtained. Finally, *Timer3* is launched to generate a new 15μs impulse for the *Trigger*.
 
 ### *Timer2* Handler
 The *TIMER2_IRQHandler* is shown in the following figure:
