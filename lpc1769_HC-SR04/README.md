@@ -33,3 +33,6 @@ The working signals of the module are shown in the following image:
 </p>
 
 To start the measurement, it is necessary to send a TTL pulse (5V) with a duration of at least 10μs on the Trig pin and then wait for the response, from which the time elapsed for the echo return is obtained. If an excessive time elapses (about 12ms, greater than that expected for the maximum distance of 4m), the measurement is considered invalid.
+
+## Assembly plan
+The following figure shows the breadboard mounting plan including both the ultrasonic module and the LCD display already presented in the [liquid crystal display project](../lpc1769_LCD), to which reference should be made for the general operation with the LPC1769 development board for microcontroller.
