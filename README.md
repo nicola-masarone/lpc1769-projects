@@ -5,4 +5,4 @@ Each folder beginning with *lpc1769* contains a separate project, with a descrip
 
 Please note that two folders (*/lpc_board_nxp_lpcxpresso_1769* and */lpc_chip_175x_6x*) contain proprietary software from NXP, as described in their LICENSE files. This software is needed to compile projects in other folders.
 
-+ [lpc1769_LEDs](/lpc1769_LEDs)
++ [lpc1769_LEDs](https://github.com/nicola-masarone/lpc1769-projects/tree/master/lpc1769_LEDs)
