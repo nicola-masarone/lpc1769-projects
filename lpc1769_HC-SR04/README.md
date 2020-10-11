@@ -1,4 +1,5 @@
 # Ultrasonic sensor
+This project allows the use of the HC-SR04 ultrasonic module to create a distance meter with data display on LCD.
 ## Introduction
 <img align="right" src="pic/parkingsensor.jpg" width=200/> Ultrasonic distance measurement has many applications, both in the consumer and industrial fields. In the first case it is enough to think of the vehicle parking sensors while <img align="left" src="pic/tanksensor.jpg" width=200/> in the second case it is possible to refer to the level sensor in the tanks where physical contact between the sensor and the stored material is not desired.
 
