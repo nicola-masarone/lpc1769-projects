@@ -100,3 +100,23 @@ Note that the *DHT11Ready* flag is set high in the *P0.4* interrupt handling fun
 </p>
 
 Then the machine transitions to the next state.
+#### *Case 2*
+In this state the microcontroller is ready to receive data. It must therefore transform the functionality of P0.4 from *GPIO output* to *capture of Timer2(input)*, so as to be able to measure the duration of the bits.
+<p align="center">
+  <img src="pic/case2.png" width=800/>
+</p>
+
+Note that the timer is programmed to capture both the rising and falling edges of the bit, with generation of interrupts on both and calculation of the time elapsed between the two edges. Everything will happen within the *ISR TIMER2_IRQHandler()*, shown previously in another image. Then the machine transitions to the next state, where it will stay for the entire reception of the 40 bits provided.
+#### *Case 3*
+In this state, the microcontroller divides the activity into two parts: one dedicated to the collection of the 40 bits and the other at the end of the reception for the organization of the received data.
+
+In the first part, shown below, it waits for the falling edge of the bit, after which it exits the *do-while* to proceed with recording the time measured by the *ISR* (*TimerVal* variable) in the buffer for the 40 bits. Then it scales the counter back of the bits to be received and waits for the next bit.
+<p align="center">
+  <img src="pic/case3_1.png" width=550/>
+</p>
+
+In the second part, the microcontroller can process the content of the 40 bits received to obtain the bytes relating to: *humidity in the whole part, humidity in the decimal part, temperature in the whole part, temperature in the decimal part, parity control*.
+<p align="center">
+  <img src="pic/case3_2.png" width=800/>
+</p>
+
