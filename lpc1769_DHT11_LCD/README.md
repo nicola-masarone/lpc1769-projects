@@ -9,7 +9,7 @@ This module is extremely used and includes 3-pin (as in our case) or 4-pin versi
   <img src="pic/DHT11_features.png" width=400/>
 </p>
 
-The power supply and therefore the input / output logic levels are between 3.3V and 5V, thus making it perfectly compatible with the LPC1769 microcontroller running at 3.3V
+The power supply and therefore the input/output logic levels are between 3.3V and 5V, thus making it perfectly compatible with the LPC1769 microcontroller running at 3.3V
 
 The module pinout is shown in the following figure:
 <p align="center">
@@ -18,7 +18,7 @@ The module pinout is shown in the following figure:
 
 where, apart from the obvious meaning of *Vcc* and *GND*, *DOUT* represents the bidirectional data exchange pin.
 
-The working signals of the module are shown in the following image:
+The signals of the module are shown in the following image:
 <p align="center">
   <img src="pic/DHT11_protocol.png" width=800/>
 </p>
@@ -33,7 +33,7 @@ The sensor then responds with another impulse to signal its readiness to transmi
   <img src="pic/DHT11_ack.png" width=500/>
 </p>
 
-The actual transmission of data then takes place, comprising a total of 40 bits, organized in 5 groups of 8: humidity in the whole part, humidity in the decimal part, temperature in the whole part, temperature in the decimal part, parity control. In each group the most significant bit (b7) is transmitted first, then gradually up to the least significant (b0). To distinguish bits 0 from bits 1, the device modifies the duration of the response pulse, after a fixed preamble of 50μs, according to the following graphs (approximately 26-28 μs for bit 0 and 70 μs for bit 1); by measuring this duration with a timer, the microcontroller can correctly interpret the value of the bit received.
+The actual transmission of data then takes place, comprising a total of *40 bits*, organized in *5 groups* of 8: *humidity in the whole part, humidity in the decimal part, temperature in the whole part, temperature in the decimal part, parity control*. In each group the most significant bit (b7) is transmitted first, then gradually up to the least significant (b0). To distinguish bits 0 from bits 1, the device modifies the duration of the response pulse, after a fixed preamble of 50μs, according to the following graphs (approximately 26-28 μs for bit 0 and 70 μs for bit 1); by measuring this duration with a timer, the microcontroller can correctly interpret the value of the bit received.
 <p align="center">
   <img src="pic/DHT11_bit01.png" width=500/>
 </p>
@@ -55,7 +55,7 @@ In particular, the pin *P0.4* used by us to read the *DOUT* signal is documented
   <img src="pic/P04.png" width=600/>
 </p>
 
-During the different phases of the communication protocol this pin will be set as P0 [4] (*General purpose digital input/output pin*) or as CAP2 [0] (*Capture input for Timer 2, channel 0*).
+During the different phases of the communication protocol this pin will be set as P0[4] (*General purpose digital input/output pin*) or as CAP2[0] (*Capture input for Timer 2, channel 0*).
 ### Unified power supply
 Once the debugging phase is finished, if you want to use the microcontroller without connecting to the PC via USB cable, it is necessary to supply it with power using a normal wall charger or a commercial power bank with USB socket. We thus take advantage of the fact that the DHT11 sensor (as well as the liquid crystal display) receives 3.3V power from the same development board for the LPC1769.
 ## Firmware
@@ -66,7 +66,7 @@ The following figure shows a first piece of code for the *main()* function
   <img src="pic/main_1.png" width=800/>
 </p>
 
-The first line powers *Timer2* which starts off when the microcontroller is reset. Then there is a piece of code to set a wait, useful for resetting the DHT11 device.
+The first line powers *Timer2* which is off when the microcontroller is at reset. Then there is a piece of code to set a wait, useful for resetting the DHT11 device.
 <p align="center">
   <img src="pic/delay_code.png" width=600/>
 </p>
@@ -106,7 +106,7 @@ In this state the microcontroller is ready to receive data. It must therefore tr
   <img src="pic/case2.png" width=800/>
 </p>
 
-Note that the timer is programmed to capture both the rising and falling edges of the bit, with generation of interrupts on both and calculation of the time elapsed between the two edges. Everything will happen within the *ISR TIMER2_IRQHandler()*, shown previously in another image. Then the machine transitions to the next state, where it will stay for the entire reception of the 40 bits provided.
+Note that the timer is programmed to capture both the rising and falling edges of the bit, with generation of interrupts on both and calculation of the time elapsed between the two edges. Everything will happen within the ISR *TIMER2_IRQHandler()*, shown previously in another image. Then the machine transitions to the next state, where it will stay for the entire reception of the 40 bits provided.
 #### *Case 3*
 In this state, the microcontroller divides the activity into two parts: one dedicated to the collection of the 40 bits and the other at the end of the reception for the organization of the received data.
 
@@ -130,5 +130,5 @@ The *SysTickTimer* interrupt, for updating the liquid crystal display, causes th
 Compared to the initial project, the count from 0 to 1999 has been eliminated to replace it with the display of the data sent by the sensor, alternating the display of humidity (marked by the colon symbol on the left in the display) and temperature, both with an integer part and one decimal place.
 ## Possible improvements
 + The measurement of humidity and temperature currently provides only real-time visualization on the display. A recording function on non-volatile memory could be added, together with the sampling date and time, for subsequent data analysis (*datalogger*).
-+ The project could be modified to perform measurements that are no longer cyclical (as now, once every two seconds) but on command, by means of a measurement start key. Another key could switch the temperature display in different scales: ° C, ° F, K.
++ The project could be modified to perform measurements that are no longer cyclical (as now, once every two seconds) but on command, by means of a measurement start key. Another key could switch the temperature display in different scales: °C, °F, K.
 + The management of a *buzzer* could be added which activates when predetermined thresholds are exceeded, creating an alarm for unfavorable weather conditions.
