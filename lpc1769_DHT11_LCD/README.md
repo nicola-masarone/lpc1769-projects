@@ -67,3 +67,18 @@ The following figure shows a first piece of code for the *main()* function
 </p>
 
 The first line powers *Timer2* which starts off when the microcontroller is reset. Then there is a piece of code to set a wait, useful for resetting the DHT11 device.
+<p align="center">
+  <img src="pic/delay_code.png" width=600/>
+</p>
+
+A *delayCompleted* variable is cleared and then *Timer2* is set for a 2000 ms delay, using the *setDelayms()* function, whose code is shown below.
+<p align="center">
+  <img src="pic/setDelayms.png" width=800/>
+</p>
+
+Note that in the *do-while loop* the microcontroller (*"wfi"*) is put to rest and when it wakes up the *delayCompleted* flag is still checked. This goes to the high value (causing the exit from the *do-while* loop) only when the set ms have elapsed, as can be seen in the interrupt management function of *Timer2* below (last structure *if()* below).
+<p align="center">
+  <img src="pic/TIMER2_IRQHAndler.png" width=800/>
+</p>
+
+At the end of the initializations the infinite *while* loop begins in which a state machine is executed through a *switch* statement with the various *cases* corresponding to the different states of the machine.
