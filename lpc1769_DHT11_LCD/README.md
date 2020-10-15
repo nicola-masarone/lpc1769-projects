@@ -56,7 +56,14 @@ In particular, the pin *P0.4* used by us to read the *DOUT* signal is documented
 </p>
 
 During the different phases of the communication protocol this pin will be set as P0 [4] (*General purpose digital input/output pin*) or as CAP2 [0] (*Capture input for Timer 2, channel 0*).
-
 ### Unified power supply
 Once the debugging phase is finished, if you want to use the microcontroller without connecting to the PC via USB cable, it is necessary to supply it with power using a normal wall charger or a commercial power bank with USB socket. We thus take advantage of the fact that the DHT11 sensor (as well as the liquid crystal display) receives 3.3V power from the same development board for the LPC1769.
+## Firmware
+The C code structure used is based on the previous [*liquid crystal display management project*](https://github.com/nicola-masarone/lpc1769-projects/tree/master/lpc1769_LCD). The rest was developed based on the need of the DHT11 module, with all the phases of the communication protocol expected. The discussion of the firmware developed is necessarily synthetic and is limited to the innovations introduced for the current project. The reader is responsible for integrating what is described with the study of the projects presented in other parts of the site. The code for the current project is on this same repository.
+### *main()* function
+The following figure shows a first piece of code for the *main()* function
+<p align="center">
+  <img src="pic/main_1.png" width=800/>
+</p>
 
+The first line powers *Timer2* which starts off when the microcontroller is reset. Then there is a piece of code to set a wait, useful for resetting the DHT11 device.
