@@ -45,3 +45,18 @@ The following figure shows the breadboard mounting plan including both the DHT11
   <img src="pic/DHT11_LCD_bb.png" width=800/>
 </p>
 
+### DHT11 <=> LPC1769 interfacing
+The only data exchange signal between the humidity and temperature sensor and the microcontroller is the *DOUT* line. Since it will be necessary to measure the duration of the pulses (to obtain the value of the bits) it is preferable to choose a pin of the microcontroller with *Timer Capture* functionality. For this reason, pin P0.4 has been selected (among other things available because it is not used for managing the liquid crystal display).
+#### *DOUT*
+The only data exchange line must be used in bidirectional mode. In some phases it will be set as *GPIO* in output, in others as *GPIO* in input, in others still as *Timer Capture* for pulse width measurement. The DTH11 device has a pull-up resistor of about 5kΩ on the *DOUT* line and it is therefore possible to use the internal *pull-up* of the microcontroller, activated by default at reset.
+
+In particular, the pin *P0.4* used by us to read the *DOUT* signal is documented as follows:
+<p align="center">
+  <img src="pic/P04.png" width=600/>
+</p>
+
+During the different phases of the communication protocol this pin will be set as P0 [4] (*General purpose digital input/output pin*) or as CAP2 [0] (*Capture input for Timer 2, channel 0*).
+
+### Unified power supply
+Once the debugging phase is finished, if you want to use the microcontroller without connecting to the PC via USB cable, it is necessary to supply it with power using a normal wall charger or a commercial power bank with USB socket. We thus take advantage of the fact that the DHT11 sensor (as well as the liquid crystal display) receives 3.3V power from the same development board for the LPC1769.
+
