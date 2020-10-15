@@ -40,3 +40,8 @@ The actual transmission of data then takes place, comprising a total of 40 bits,
 
 The parity check is performed by adding the first 4 groups of 8 bits and comparing this sum with the fifth group of checksum.
 ## Assembly plan
+The following figure shows the breadboard mounting plan including both the DHT11 module and the LCD display already presented in the [*Liquid Crystal Display project*](https://github.com/nicola-masarone/lpc1769-projects/tree/master/lpc1769_LCD), to which reference should be made for the general operation with the LPC1769 development board for microcontroller.
+<p align="center">
+  <img src="pic/DHT11_LCD_bb.png" width=800/>
+</p>
+
