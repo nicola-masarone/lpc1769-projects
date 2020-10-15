@@ -82,3 +82,21 @@ Note that in the *do-while loop* the microcontroller (*"wfi"*) is put to rest an
 </p>
 
 At the end of the initializations the infinite *while* loop begins in which a state machine is executed through a *switch* statement with the various *cases* corresponding to the different states of the machine.
+#### *Case 0*
+In the first state, the microcontroller generates the waveform for starting the protocol, using pin *P0.4* as the *output GPIO*. The start-up phase provides a 20 ms delay to give the DHT11 time to wake up. After waking up, the machine transitions to the next state.
+<p align="center">
+  <img src="pic/case0.png" width=800/>
+</p>
+
+#### *Case 1*
+In this state, the microcontroller ends the start impulse and waits for the DHT11 to respond with a waveform to signal its readiness to transmit the humidity and temperature data. To do this, the microcontroller sets pin P0.4 as *GPIO in input*, also activating the interrupt on the rising edge of the signal (response from DHT11). It then rests waiting for the response, checking the *DHT11Ready* flag (a time-out would be needed here).
+<p align="center">
+  <img src="pic/case1.png" width=800/>
+</p>
+
+Note that the *DHT11Ready* flag is set high in the *P0.4* interrupt handling function.
+<p align="center">
+  <img src="pic/EINT3_IRQHandler.png" width=800/>
+</p>
+
+Then the machine transitions to the next state.
