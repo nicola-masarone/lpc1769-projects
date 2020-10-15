@@ -1,0 +1,835 @@
+Archive member included to satisfy reference by file (symbol)
+
+/media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                              ./src/sysinit.o (Board_SetupClocking)
+/media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                              /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o) (Chip_IOCON_SetPinMuxing)
+/media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                              /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o) (Chip_SetupXtalClocking)
+/media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                              /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o) (Chip_Clock_EnablePLL)
+/usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+
+Discarded input sections
+
+ .group         0x00000000        0x8 ./src/cr_startup_lpc175x_6x.o
+ .text          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .data          0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .bss           0x00000000        0x0 ./src/cr_startup_lpc175x_6x.o
+ .group         0x00000000        0x8 ./src/lpc1769.o
+ .text          0x00000000        0x0 ./src/lpc1769.o
+ .data          0x00000000        0x0 ./src/lpc1769.o
+ .bss           0x00000000        0x0 ./src/lpc1769.o
+ .debug_macro   0x00000000      0x88c ./src/lpc1769.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .group         0x00000000        0x8 ./src/sysinit.o
+ .text          0x00000000        0x0 ./src/sysinit.o
+ .data          0x00000000        0x0 ./src/sysinit.o
+ .bss           0x00000000        0x0 ./src/sysinit.o
+ .debug_macro   0x00000000      0x88c ./src/sysinit.o
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .text          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .data          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .bss           0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .rodata.pinmuxing
+                0x00000000       0x5c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .text.Board_SetupMuxing
+                0x00000000       0x1c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .text.Board_SystemInit
+                0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x12d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x5b2 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x7b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x3a /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0xbb1 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x22c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x42 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x52 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x78 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x82 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x48c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x4c5 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x1b7 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x21b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x1b9 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x40 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x162 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x94 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0xb8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x4c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000      0x328 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x49 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0xca /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x18 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x70 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x9a /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x20 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00000000       0x28 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .text          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .data          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .bss           0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .text.Chip_IOCON_PinMuxSet
+                0x00000000       0x38 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .text.Chip_IOCON_PinMux
+                0x00000000       0x94 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .text.Chip_IOCON_SetPinMuxing
+                0x00000000       0x64 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x00000000      0x2e9 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_abbrev  0x00000000      0x126 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_aranges
+                0x00000000       0x30 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_ranges  0x00000000       0x20 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1cd /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x886 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b2 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x00000000      0x461 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_str     0x00000000    0x10659 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .comment       0x00000000       0x6f /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_frame   0x00000000       0x80 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .ARM.attributes
+                0x00000000       0x33 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .data          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .bss           0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_SetupIrcClocking
+                0x00000000       0x6c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_SystemInit
+                0x00000000        0xc /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x886 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b2 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .group         0x00000000        0x8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .data          0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .bss           0x00000000        0x0 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLEnabled
+                0x00000000       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLEnabled
+                0x00000000       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLConnected
+                0x00000000       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsUSBPLLConnected
+                0x00000000       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLSource
+                0x00000000       0x20 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainOscRate
+                0x00000000       0x14 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetIntOscRate
+                0x00000000       0x14 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetRTCOscRate
+                0x00000000       0x14 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLInClockRate
+                0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBPLLInClockRate
+                0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_EnablePeriphClock
+                0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_DisablePeriphClock
+                0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_IsPeripheralClockEnabled
+                0x00000000       0x3c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetCPUClockSource
+                0x00000000       0x2c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetCPUClockSource
+                0x00000000       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetCPUClockDiv
+                0x00000000       0x1c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetUSBClockDiv
+                0x00000000       0x30 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBClockDiv
+                0x00000000       0x1c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetPCLKDiv
+                0x00000000       0x64 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetPCLKDiv
+                0x00000000       0x8c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_SetCLKOUTSource
+                0x00000000       0x44 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetSYSCLKRate
+                0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainPLLOutClockRate
+                0x00000000       0x54 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBPLLOutClockRate
+                0x00000000       0x40 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetMainClockRate
+                0x00000000       0x28 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetSystemClockRate
+                0x00000000       0x18 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetUSBClockRate
+                0x00000000       0x38 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_GetPeripheralClockRate
+                0x00000000       0x28 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x886 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x12d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x5b2 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x7b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x3a /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x2d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0xbb1 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x22c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x42 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x52 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x78 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x82 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x48c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x4c5 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b7 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x10 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x21b /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x1b9 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x40 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x22 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x162 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x94 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0xb8 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x4c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000      0x328 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x49 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x16 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0xca /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x00000000       0x18 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text          0x00000000        0x0 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .data          0x00000000        0x0 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+ .bss           0x00000000        0x0 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MFlash512        0x00000000         0x00080000         xr
+RamLoc32         0x10000000         0x00008000         xrw
+RamAHB32         0x2007c000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ./src/cr_startup_lpc175x_6x.o
+LOAD ./src/lpc1769.o
+LOAD ./src/sysinit.o
+LOAD /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a
+LOAD /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a
+START GROUP
+LOAD /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a
+LOAD /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m/libcr_eabihelpers.a
+END GROUP
+                0x00000000                __base_MFlash512 = 0x0
+                0x00000000                __base_Flash = 0x0
+                0x00080000                __top_MFlash512 = 0x80000
+                0x00080000                __top_Flash = 0x80000
+                0x10000000                __base_RamLoc32 = 0x10000000
+                0x10000000                __base_RAM = 0x10000000
+                0x10008000                __top_RamLoc32 = 0x10008000
+                0x10008000                __top_RAM = 0x10008000
+                0x2007c000                __base_RamAHB32 = 0x2007c000
+                0x2007c000                __base_RAM2 = 0x2007c000
+                0x20084000                __top_RamAHB32 = 0x20084000
+                0x20084000                __top_RAM2 = 0x20084000
+
+.text           0x00000000      0x56c
+ FILL mask 0xff
+                0x00000000                __vectors_start__ = ABSOLUTE (.)
+ *(.isr_vector)
+ .isr_vector    0x00000000       0xcc ./src/cr_startup_lpc175x_6x.o
+                0x00000000                g_pfnVectors
+                0x000000cc                . = ALIGN (0x4)
+                0x000000cc                __section_table_start = .
+                0x000000cc                __data_section_table = .
+                0x000000cc        0x4 LONG 0x56c LOADADDR (.data)
+                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
+                0x000000d4        0x4 LONG 0x0 SIZEOF (.data)
+                0x000000d8        0x4 LONG 0x56c LOADADDR (.data_RAM2)
+                0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
+                0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
+                0x000000e4                __data_section_table_end = .
+                0x000000e4                __bss_section_table = .
+                0x000000e4        0x4 LONG 0x10000000 ADDR (.bss)
+                0x000000e8        0x4 LONG 0x0 SIZEOF (.bss)
+                0x000000ec        0x4 LONG 0x2007c000 ADDR (.bss_RAM2)
+                0x000000f0        0x4 LONG 0x0 SIZEOF (.bss_RAM2)
+                0x000000f4                __bss_section_table_end = .
+                0x000000f4                __section_table_end = .
+ *(.after_vectors*)
+ .after_vectors
+                0x000000f4      0x144 ./src/cr_startup_lpc175x_6x.o
+                0x000000f4                data_init
+                0x00000138                bss_init
+                0x00000170                ResetISR
+                0x000001e8                NMI_Handler
+                0x000001f0                HardFault_Handler
+                0x000001f8                MemManage_Handler
+                0x00000200                BusFault_Handler
+                0x00000208                UsageFault_Handler
+                0x00000210                SVC_Handler
+                0x00000218                DebugMon_Handler
+                0x00000220                PendSV_Handler
+                0x00000228                SysTick_Handler
+                0x00000230                TIMER2_IRQHandler
+                0x00000230                RIT_IRQHandler
+                0x00000230                I2C0_IRQHandler
+                0x00000230                USBActivity_IRQHandler
+                0x00000230                PWM1_IRQHandler
+                0x00000230                I2C1_IRQHandler
+                0x00000230                EINT2_IRQHandler
+                0x00000230                UART1_IRQHandler
+                0x00000230                EINT3_IRQHandler
+                0x00000230                CANActivity_IRQHandler
+                0x00000230                TIMER3_IRQHandler
+                0x00000230                UART0_IRQHandler
+                0x00000230                IntDefaultHandler
+                0x00000230                PLL0_IRQHandler
+                0x00000230                CAN_IRQHandler
+                0x00000230                PLL1_IRQHandler
+                0x00000230                SSP0_IRQHandler
+                0x00000230                I2S_IRQHandler
+                0x00000230                I2C2_IRQHandler
+                0x00000230                RTC_IRQHandler
+                0x00000230                TIMER0_IRQHandler
+                0x00000230                SPI_IRQHandler
+                0x00000230                EINT1_IRQHandler
+                0x00000230                TIMER1_IRQHandler
+                0x00000230                UART2_IRQHandler
+                0x00000230                ADC_IRQHandler
+                0x00000230                SSP1_IRQHandler
+                0x00000230                USB_IRQHandler
+                0x00000230                BOD_IRQHandler
+                0x00000230                WDT_IRQHandler
+                0x00000230                QEI_IRQHandler
+                0x00000230                EINT0_IRQHandler
+                0x00000230                ETH_IRQHandler
+                0x00000230                DMA_IRQHandler
+                0x00000230                UART3_IRQHandler
+                0x00000230                MCPWM_IRQHandler
+ *(.text*)
+ .text.main     0x00000238       0x2c ./src/lpc1769.o
+                0x00000238                main
+ .text.SystemInit
+                0x00000264       0x24 ./src/sysinit.o
+                0x00000264                SystemInit
+ .text.Chip_SYSCTL_SetFLASHAccess
+                0x00000288       0x30 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .text.Board_SetupClocking
+                0x000002b8       0x14 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x000002b8                Board_SetupClocking
+ .text.Chip_Clock_IsMainPLLEnabled
+                0x000002cc       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLLocked
+                0x000002f0       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsMainPLLConnected
+                0x00000314       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_EnableCrystal
+                0x00000338       0x20 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_IsCrystalEnabled
+                0x00000358       0x24 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_Clock_SetMainPLLSource
+                0x0000037c       0x20 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .text.Chip_SetupXtalClocking
+                0x0000039c       0x90 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000039c                Chip_SetupXtalClocking
+ .text.Chip_Clock_FeedPLL
+                0x0000042c       0x34 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .text.Chip_Clock_EnablePLL
+                0x00000460       0x44 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000460                Chip_Clock_EnablePLL
+ .text.Chip_Clock_DisablePLL
+                0x000004a4       0x48 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000004a4                Chip_Clock_DisablePLL
+ .text.Chip_Clock_SetupPLL
+                0x000004ec       0x5c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000004ec                Chip_Clock_SetupPLL
+ .text.Chip_Clock_SetCPUClockDiv
+                0x00000548       0x20 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000548                Chip_Clock_SetCPUClockDiv
+ .text.__weak_main
+                0x00000568        0x4 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                0x00000568                __main
+                0x00000568                __weak_main
+ *(.rodata .rodata.* .constdata .constdata.*)
+                0x0000056c                . = ALIGN (0x4)
+
+.glue_7         0x0000056c        0x0
+ .glue_7        0x0000056c        0x0 linker stubs
+
+.glue_7t        0x0000056c        0x0
+ .glue_7t       0x0000056c        0x0 linker stubs
+
+.vfp11_veneer   0x0000056c        0x0
+ .vfp11_veneer  0x0000056c        0x0 linker stubs
+
+.v4_bx          0x0000056c        0x0
+ .v4_bx         0x0000056c        0x0 linker stubs
+
+.iplt           0x0000056c        0x0
+ .iplt          0x0000056c        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.rel.dyn        0x0000056c        0x0
+ .rel.iplt      0x0000056c        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+                0x0000056c                __exidx_start = .
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x0000056c                __exidx_end = .
+                0x0000056c                _etext = .
+
+.data_RAM2      0x2007c000        0x0 load address 0x0000056c
+ FILL mask 0xff
+                [!provide]                PROVIDE (__start_data_RAM2, .)
+ *(.ramfunc.$RAM2)
+ *(.ramfunc.$RamAHB32)
+ *(.data.$RAM2*)
+ *(.data.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__end_data_RAM2, .)
+
+.uninit_RESERVED
+                0x10000000        0x0
+ *(.bss.$RESERVED*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_uninit_RESERVED = .
+
+.data           0x10000000        0x0 load address 0x0000056c
+ FILL mask 0xff
+                0x10000000                _data = .
+ *(vtable)
+ *(.ramfunc*)
+ *(.data*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _edata = .
+
+.igot.plt       0x10000000        0x0 load address 0x0000056c
+ .igot.plt      0x10000000        0x0 ./src/cr_startup_lpc175x_6x.o
+
+.bss_RAM2       0x2007c000        0x0
+                [!provide]                PROVIDE (__start_bss_RAM2, .)
+ *(.bss.$RAM2*)
+ *(.bss.$RamAHB32*)
+                0x2007c000                . = ALIGN ((. != 0x0)?0x4:0x1)
+                [!provide]                PROVIDE (__end_bss_RAM2, .)
+
+.bss            0x10000000        0x0
+                0x10000000                _bss = .
+ *(.bss*)
+ *(COMMON)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _ebss = .
+                [!provide]                PROVIDE (end, .)
+
+.noinit_RAM2    0x2007c000        0x0
+ *(.noinit.$RAM2*)
+ *(.noinit.$RamAHB32*)
+                0x2007c000                . = ALIGN (0x4)
+
+.noinit         0x10000000        0x0
+                0x10000000                _noinit = .
+ *(.noinit*)
+                0x10000000                . = ALIGN (0x4)
+                0x10000000                _end_noinit = .
+                [!provide]                PROVIDE (_pvHeapStart, DEFINED (__user_heap_base)?__user_heap_base:.)
+                0x10008000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
+                [!provide]                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
+OUTPUT(lpc1769.axf elf32-littlearm)
+
+.debug_info     0x00000000     0x18cd
+ .debug_info    0x00000000      0x24b ./src/cr_startup_lpc175x_6x.o
+ .debug_info    0x0000024b       0x46 ./src/lpc1769.o
+ .debug_info    0x00000291      0x110 ./src/sysinit.o
+ .debug_info    0x000003a1      0x591 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_info    0x00000932      0x439 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x00000d6b      0xb62 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_abbrev   0x00000000      0x782
+ .debug_abbrev  0x00000000       0xe6 ./src/cr_startup_lpc175x_6x.o
+ .debug_abbrev  0x000000e6       0x3c ./src/lpc1769.o
+ .debug_abbrev  0x00000122       0xa3 ./src/sysinit.o
+ .debug_abbrev  0x000001c5      0x15c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_abbrev  0x00000321      0x175 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_abbrev  0x00000496      0x2ec /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_aranges  0x00000000      0x278
+ .debug_aranges
+                0x00000000       0x80 ./src/cr_startup_lpc175x_6x.o
+ .debug_aranges
+                0x00000080       0x20 ./src/lpc1769.o
+ .debug_aranges
+                0x000000a0       0x20 ./src/sysinit.o
+ .debug_aranges
+                0x000000c0       0x38 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_aranges
+                0x000000f8       0x60 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_aranges
+                0x00000158      0x120 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_ranges   0x00000000      0x218
+ .debug_ranges  0x00000000       0x70 ./src/cr_startup_lpc175x_6x.o
+ .debug_ranges  0x00000070       0x10 ./src/lpc1769.o
+ .debug_ranges  0x00000080       0x10 ./src/sysinit.o
+ .debug_ranges  0x00000090       0x28 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_ranges  0x000000b8       0x50 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_ranges  0x00000108      0x110 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_macro    0x00000000     0x4902
+ .debug_macro   0x00000000       0x1d ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x0000001d      0x88c ./src/cr_startup_lpc175x_6x.o
+ .debug_macro   0x000008a9       0x23 ./src/lpc1769.o
+ .debug_macro   0x000008cc      0x217 ./src/sysinit.o
+ .debug_macro   0x00000ae3       0x10 ./src/sysinit.o
+ .debug_macro   0x00000af3      0x12d ./src/sysinit.o
+ .debug_macro   0x00000c20      0x5b2 ./src/sysinit.o
+ .debug_macro   0x000011d2       0x22 ./src/sysinit.o
+ .debug_macro   0x000011f4       0x7b ./src/sysinit.o
+ .debug_macro   0x0000126f       0x10 ./src/sysinit.o
+ .debug_macro   0x0000127f       0x2d ./src/sysinit.o
+ .debug_macro   0x000012ac       0x3a ./src/sysinit.o
+ .debug_macro   0x000012e6       0x2d ./src/sysinit.o
+ .debug_macro   0x00001313      0xbb1 ./src/sysinit.o
+ .debug_macro   0x00001ec4      0x22c ./src/sysinit.o
+ .debug_macro   0x000020f0       0x42 ./src/sysinit.o
+ .debug_macro   0x00002132       0x52 ./src/sysinit.o
+ .debug_macro   0x00002184       0x78 ./src/sysinit.o
+ .debug_macro   0x000021fc       0x82 ./src/sysinit.o
+ .debug_macro   0x0000227e      0x48c ./src/sysinit.o
+ .debug_macro   0x0000270a       0x34 ./src/sysinit.o
+ .debug_macro   0x0000273e      0x4c5 ./src/sysinit.o
+ .debug_macro   0x00002c03      0x1b7 ./src/sysinit.o
+ .debug_macro   0x00002dba       0x10 ./src/sysinit.o
+ .debug_macro   0x00002dca      0x21b ./src/sysinit.o
+ .debug_macro   0x00002fe5      0x1b9 ./src/sysinit.o
+ .debug_macro   0x0000319e       0x40 ./src/sysinit.o
+ .debug_macro   0x000031de       0x22 ./src/sysinit.o
+ .debug_macro   0x00003200      0x162 ./src/sysinit.o
+ .debug_macro   0x00003362       0x94 ./src/sysinit.o
+ .debug_macro   0x000033f6       0xb8 ./src/sysinit.o
+ .debug_macro   0x000034ae       0x4c ./src/sysinit.o
+ .debug_macro   0x000034fa       0x16 ./src/sysinit.o
+ .debug_macro   0x00003510      0x328 ./src/sysinit.o
+ .debug_macro   0x00003838       0x49 ./src/sysinit.o
+ .debug_macro   0x00003881       0x16 ./src/sysinit.o
+ .debug_macro   0x00003897       0xca ./src/sysinit.o
+ .debug_macro   0x00003961       0x18 ./src/sysinit.o
+ .debug_macro   0x00003979       0x70 ./src/sysinit.o
+ .debug_macro   0x000039e9       0x9a ./src/sysinit.o
+ .debug_macro   0x00003a83       0x20 ./src/sysinit.o
+ .debug_macro   0x00003aa3       0x28 ./src/sysinit.o
+ .debug_macro   0x00003acb      0x217 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00003ce2      0x886 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_macro   0x00004568      0x1cd /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00004735      0x1cd /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_line     0x00000000     0x16c0
+ .debug_line    0x00000000       0xd1 ./src/cr_startup_lpc175x_6x.o
+ .debug_line    0x000000d1       0x4d ./src/lpc1769.o
+ .debug_line    0x0000011e      0x4c1 ./src/sysinit.o
+ .debug_line    0x000005df      0x505 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_line    0x00000ae4      0x4eb /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x00000fcf      0x6f1 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+
+.debug_str      0x00000000    0x11cac
+ .debug_str     0x00000000     0x26a1 ./src/cr_startup_lpc175x_6x.o
+                               0x26b4 (size before relaxing)
+ .debug_str     0x000026a1       0xa0 ./src/lpc1769.o
+                               0x2576 (size before relaxing)
+ .debug_str     0x00002741     0xe492 ./src/sysinit.o
+                              0x10a67 (size before relaxing)
+ .debug_str     0x00010bd3      0x48d /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                              0x10e77 (size before relaxing)
+ .debug_str     0x00011060      0x1ed /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                              0x10841 (size before relaxing)
+ .debug_str     0x0001124d      0xa5f /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                              0x111dc (size before relaxing)
+
+.comment        0x00000000       0xdc
+ .comment       0x00000000       0x6e ./src/cr_startup_lpc175x_6x.o
+                                 0x6f (size before relaxing)
+ .comment       0x0000006e       0x6f ./src/lpc1769.o
+ .comment       0x0000006e       0x6f ./src/sysinit.o
+ .comment       0x0000006e       0x6f /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .comment       0x0000006e       0x6f /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .comment       0x0000006e       0x6f /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .comment       0x0000006e       0x6e /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+                                 0x6f (size before relaxing)
+
+.ARM.attributes
+                0x00000000       0x33
+ .ARM.attributes
+                0x00000000       0x33 ./src/cr_startup_lpc175x_6x.o
+ .ARM.attributes
+                0x00000033       0x33 ./src/lpc1769.o
+ .ARM.attributes
+                0x00000066       0x33 ./src/sysinit.o
+ .ARM.attributes
+                0x00000099       0x33 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .ARM.attributes
+                0x000000cc       0x33 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .ARM.attributes
+                0x000000ff       0x33 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .ARM.attributes
+                0x00000132       0x33 /usr/local/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m/libcr_c.a(__weak__main.o)
+
+.debug_frame    0x00000000      0x814
+ .debug_frame   0x00000000      0x170 ./src/cr_startup_lpc175x_6x.o
+ .debug_frame   0x00000170       0x28 ./src/lpc1769.o
+ .debug_frame   0x00000198       0x34 ./src/sysinit.o
+ .debug_frame   0x000001cc       0x8c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_board_nxp_lpcxpresso_1769/Debug/liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_frame   0x00000258      0x12c /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_frame   0x00000384      0x490 /media/data/Documenti/Scuola/anno scolastico 2016-2017/workspace-LPCXpresso/lpc_chip_175x_6x/Debug/liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
