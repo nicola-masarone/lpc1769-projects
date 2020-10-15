@@ -120,3 +120,15 @@ In the second part, the microcontroller can process the content of the 40 bits r
   <img src="pic/case3_2.png" width=800/>
 </p>
 
+Also within this second part we find the parity check (which ensures correct data transmission) and a delay of 2 seconds before making the machine transit again in the initial state, to start a new measurement.
+### *SysTickTimer* handler
+The *SysTickTimer* interrupt, for updating the liquid crystal display, causes the execution of the code shown in the following image (representation of an initial fragment).
+<p align="center">
+  <img src="pic/SysTick_Handler_DHT11.png" width=450/>
+</p>
+
+Compared to the initial project, the count from 0 to 1999 has been eliminated to replace it with the display of the data sent by the sensor, alternating the display of humidity (marked by the colon symbol on the left in the display) and temperature, both with an integer part and one decimal place.
+## Possible improvements
++ The measurement of humidity and temperature currently provides only real-time visualization on the display. A recording function on non-volatile memory could be added, together with the sampling date and time, for subsequent data analysis (*datalogger*).
++ The project could be modified to perform measurements that are no longer cyclical (as now, once every two seconds) but on command, by means of a measurement start key. Another key could switch the temperature display in different scales: ° C, ° F, K.
++ The management of a *buzzer* could be added which activates when predetermined thresholds are exceeded, creating an alarm for unfavorable weather conditions.
