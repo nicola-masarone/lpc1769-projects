@@ -4,7 +4,7 @@
 
 In general, the integrated devices for measuring humidity and temperature provide for the correction of the reading of the first quantity based on the value read for the second, thus improving the measurement characteristics of the system. The output is digital and therefore requires the use of a microcontroller, both for display and for any remote recording or transmission.
 ## The DHT11 module
-This module is extremely used and includes 3-pin (as in our case) or 4-pin versions. The tested device is documented at the following link: [*DHT11_Temperature-Humidity_Sensor*](https://www.waveshare.com/wiki/DHT11_Temperature-Humidity_Sensor). It integrates a double humidity and temperature sensor, with digital output for both measured quantities. Data exchange takes place on a single bidirectional line.
+This module is extremely used and includes 3-pin (as in our case) or 4-pin versions. The tested device is documented at the following link: [*DHT11_Temperature-Humidity_Sensor*](https://www.waveshare.com/wiki/DHT11_Temperature-Humidity_Sensor). It integrates a humidity and temperature sensor, with digital output for both measured quantities. Data exchange takes place on a single bidirectional line.
 <p align="center">
   <img src="pic/DHT11_features.png" width=400/>
 </p>
