@@ -1,0 +1,3 @@
+i2c.c:22:6:I2C1_IRQHandler	16	static
+i2c.c:99:5:setupI2C1	4	static
+i2c.c:116:5:startI2C1	4	static
