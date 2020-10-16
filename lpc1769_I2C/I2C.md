@@ -23,5 +23,18 @@ In the following figure some examples of applications on *I<sup>2</sup>C* bus:
   <img src="pic/fig1_I2C.png" width=600/>
 </p>
 
-Taking a cue from the figure, let's analyze the possible architectures of the *I<sup>2</sup>C* bus. We note that there are several masters (MCUs), some with direct bus management (built-in control hardware or in bit-banging mode) and others with external bus management through additional controllers.
+Taking a cue from the figure, let's analyze the possible architectures of the *I<sup>2</sup>C* bus. We note that there are several masters (*MCU*s), some with direct bus management (built-in control *hardware* or in *bit-banging* mode) and others with external bus management through additional controllers.
+<p align="center">
+  <img src="pic/fig1_I2C_master.png" width=400/>
+</p>
+
+The two-wire lines coming out of the masters are connected to two *pull-up* resistors, one for *SDA* and the other for *SCL*.
+<p align="center">
+  <img src="pic/fig1_I2C_pullup (1).png" width=600/>
+</p>
+
+The separate bus sections are recognizable precisely by the *pull-up*s, which cannot be repeated on the same section as they would result in parallel with each other, with overall resistance lower than the value required by the specifications. We also observe that on the different sections there may be different power supplies, as indicated by the labels V<sub>DD0</sub> ... V<sub>DD5</sub>
+<p align="center">
+  <img src="pic/fig1_I2C_tratte (1).png" width=600/>
+</p>
 
