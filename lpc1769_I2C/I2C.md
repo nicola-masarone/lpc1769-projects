@@ -57,3 +57,23 @@ Some devices by their nature can be both transmitters and receivers (microcontro
 The devices on the bus also act as *master* or *slave*: the former initiate and terminate the communication, addressing the *slaves* involved and managing the clock signal on the bus; the latter wait to be addressed by a *master* and obey his requests.
 
 Some devices (such as microcontrollers) can change their role, from *master* to *slave* or vice versa. At all times, however, there can be only one active *master* on the bus with many *slave*s. In the following figure some terms used in the *I<sup>2</sup>C* specifications:
+<p align="center">
+  <img src="pic/terminologiaI2C.png" width=600/>
+</p>
+
+Arbitration is a procedure used in the event that several *masters* decide to initiate a communication on the same bus at the same time; this procedure regulates which of the *masters* has precedence. Synchronization, on the other hand, allows alignment between the clock signals of different devices.
+
+The *masters* present on the bus are usually microcontrollers. In the following figure we represent a structure in which the two *masters* communicate with each other:
+<p align="center">
+  <img src="pic/fig2_I2C_multimaster.png" width=500/>
+</p>
+
+Relations of the *master/slave* and *transmitter/receiver* type are not immutable over time and depend on the direction of data transfer.
+
+Suppose that microcontroller A wants to transmit data to microcontroller B: in this case A is both *master* (starts communication, addresses B, manages data exchange, ends communication) and *transmitter* (sends data to B); at the same time B is both *slave* (receives the addressing of A) and *receiver* (receives data from A).
+
+Another possibility is that microcontroller A wants to receive data from microcontroller B: in this case A is both *master* (initiates communication, addresses B, manages data exchange, ends communication) and *receiver* (receives data from B); at the same time B is both *slave* (receives the addressing of A) and *transmitter* (transmits the data to A).
+
+Obviously it is also possible that the microcontroller B becomes *master* and that A is *slave*.
+
+The fact that there can be more *masters* on the same bus creates the possibility that they try to manage communication at the same time. To avoid confusion in the data, an arbitration procedure has been envisaged to decide the priority between *masters*.
