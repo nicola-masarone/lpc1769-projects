@@ -154,3 +154,8 @@ Note that the gray parts represent communications from *master* to *slave*, whil
 <p align="center">
   <img src="pic/fig12_I2C_masterRXslaveTX.png" width=600/>
 </p>
+
++ mixed transfer format, where the roles of *transmitter/receiver* change several times; to achieve this, the *master* sends a repeated Start, followed by the *slave* address with the opposite R/W bit to the previous one, to change the data transfer direction.
+<p align="center">
+  <img src="pic/fig13_I2C_formatomisto.png" width=600/>
+</p>
