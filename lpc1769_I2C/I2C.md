@@ -1,7 +1,10 @@
-# The I<sup>2</sup>C bus
+# The *I<sup>2</sup>C* bus
 Among the various communication buses available, the *I<sup>2</sup>C* has proved to be among the most flexible and easy to use over time, determining its success and rapid diffusion in various fields of automation. To adequately present this bus, we will refer to the official documentation of NXP, the parent company of the standard born in 1982, when the manufacturer was still called Philips. The specification file is available at the following address: [*I<sup>2</sup>C-bus specification and user manual*](https://github.com/nicola-masarone/lpc1769-projects/blob/master/lpc1769_I2C/UM10204.pdf). This document, now in its sixth revision, was last updated on 4 April 2014. Further information on *I<sup>2</sup>C* compatible products or on the related NXP documentation can be found at the following address: [*I<sup>2</sup>C-bus Portfolio*](http://www.nxp.com/products/interface-and-connectivity/interface-and-system-management/i2c-bus-portfolio:MC_41735).
 
 The following does not purport to replace or translate the official document, but is intended only as a guided tour of the *NXP* standard. Nevertheless, for ease of use, the path will be articulated by referring to the same paragraphs of the standard document.
 
 ## Introduction
 The *I<sup>2</sup>C* bus now represents what is called a *de facto* standard, that is a technology which, although not regulated by any supranational technical body, is equally recognized and used by at least 50 manufacturers of electronic components for over 1000 different types of integrated circuits. The document aims to present both the logic and electrical specifications of the standard and is aimed at both users of *I<sup>2</sup>C* devices and developers of such devices.
+
+## Characteristics of the *I<sup>2</sup>C* bus
+It often happens that in electronic projects, even of a very different nature, there are similarities as regards the organization of the control infrastructure. We therefore find one or more intelligent devices connected to various peripherals for the realization of the most disparate functions. To create a reusable and scalable communication technology, then *Philips Semiconductor* (now *NXP*) thought of developing a two-wire, bidirectional, serial communication bus called *Inter-Integrated-Circuit* (*IIC* or *I<sup>2</sup>C*).
