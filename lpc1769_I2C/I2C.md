@@ -11,10 +11,11 @@ The peculiarity of this bus is that it implements the operating logic at the har
 
 Some features of the bus are:
 + two communication lines, *SDA* (*serial data*) and *SCL* (*serial clock*)
-+ each device on the bus has a unique address, with master-slave relationships. (remember that in a master-slave organization, the master commands and the slave obeys); the masters can act as transmitter or receiver
-+ multi-master technology with collision detection and arbitration, in the event that several masters decide to simultaneously take control of the same bus
-+ bidirectional 8-bit serial data transfers can take place with speeds up to 100kbit / s (Standard-mode), 400 kbit / s (Fast-mode), 1 Mbit / s (Fast-mode Plus), 3.4Mbit / s (High-speed mode)
-+ unidirectional 8-bit serial data transfers can take place up to 5Mbit / s (Ultra Fast-mode)
++ each device on the bus has a unique address, with *master-slave* relationships. (remember that in a *master-slave* organization, the *master* commands and the *slave* obeys); the *masters* can act as transmitter or receiver
++ *multi-master* technology with collision detection and arbitration, in the event that several masters decide to simultaneously take control of the same bus
++ *bidirectional* 8-bit serial data transfers can take place with speeds up to 100kbit/s (*Standard-mode*), 400 kbit/s (*Fast-mode*), 1 Mbit/s (*Fast-mode Plus*), 3.4Mbit/s (*High-speed mode*)
++ *unidirectional* 8-bit serial data transfers can take place up to 5Mbit/s (*Ultra Fast-mode*)
 + filtering integrated in the data line chip to eliminate disturbances
 + the maximum number of devices that can be connected on the same bus is limited only by the total equivalent capacity (more devices, more lines, more nF)
 
+In the following figure some examples of applications on I2C bus:
