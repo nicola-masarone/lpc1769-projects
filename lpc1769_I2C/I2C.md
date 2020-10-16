@@ -50,3 +50,10 @@ Among the *I<sup>2</sup>C* devices of the above diagram there is also a *bridge*
 
 ## The *I<sup>2</sup>C* bus protocol
 ### Standard-mode, Fast-mode and Fast-mode Plus protocols
+The information between the various devices is carried on a two-wire (*SDA* and *SCL*), bidirectional line, in which each element can act as a transmitter (one at a time) or as a receiver (many at the same time), being uniquely identified with a your address.
+
+Some devices by their nature can be both transmitters and receivers (microcontrollers, memories) while others can only be receivers (eg displays).
+
+The devices on the bus also act as *master* or *slave*: the former initiate and terminate the communication, addressing the *slaves* involved and managing the clock signal on the bus; the latter wait to be addressed by a *master* and obey his requests.
+
+Some devices (such as microcontrollers) can change their role, from *master* to *slave* or vice versa. At all times, however, there can be only one active *master* on the bus with many *slave*s. In the following figure some terms used in the *I<sup>2</sup>C* specifications:
