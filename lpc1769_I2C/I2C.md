@@ -77,3 +77,21 @@ Another possibility is that microcontroller A wants to receive data from microco
 Obviously it is also possible that the microcontroller B becomes *master* and that A is *slave*.
 
 The fact that there can be more *masters* on the same bus creates the possibility that they try to manage communication at the same time. To avoid confusion in the data, an arbitration procedure has been envisaged to decide the priority between *masters*.
+### The SDA and SCL signals
+The SDA and SCL lines are bidirectional and are connected to the power supply via a pair of pull-up resistors (see following figure).
+<p align="center">
+  <img src="pic/fig3_I2C_supply.png" width=500/>
+</p>
+
+When the bus is free, both lines are at a high logic level; the various devices present can interact with logic called *wired-AND*: in practice it is enough for a single device to keep a line low for it to stay at "0" overall (even if all the other devices indicate a logic level "1" ). For this to happen, the various devices on the lines must have *open-drain* (or *open-collector*) output stages: when they emit "0" they impose the electrical level low while for the logic level "1" they simply release the line.
+### SDA and SCL logic levels
+Given the great variety of *I<sup>2</sup>C* devices with different technologies (CMOS, NMOS, bipolar) the electrical levels associated with the logic are not fixed, with thresholds at 30% and 70% of the supply voltage.
+### Validity of the data
+The *SDA* line can only change level while the clock signal (*SCL*) is low.
+<p align="center">
+  <img src="pic/fig4_I2C_datachange.png" width=500/>
+</p>
+
+During the time intervals when *SCL* is high the *SDA* line must remain stable.
+### The Start and Stop conditions
+All communications begin with Start (abbreviated with S) and end with Stop (abbreviated with P).
