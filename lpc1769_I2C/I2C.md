@@ -18,4 +18,9 @@ Some features of the bus are:
 + filtering integrated in the data line chip to eliminate disturbances
 + the maximum number of devices that can be connected on the same bus is limited only by the total equivalent capacity (more devices, more lines, more nF)
 
-In the following figure some examples of applications on I2C bus:
+In the following figure some examples of applications on I<sup>2</sup>C bus:
+<p align="center">
+  <img src="pic/fig1_I2C.png" width=600/>
+</p>
+
+Taking a cue from the figure, let's analyze the possible architectures of the I<sup>2</sup>C bus. We note that there are several masters (MCUs), some with direct bus management (built-in control hardware or in bit-banging mode) and others with external bus management through additional controllers.
