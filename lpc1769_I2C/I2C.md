@@ -8,3 +8,13 @@ The *I<sup>2</sup>C* bus now represents what is called a *de facto* standard, th
 It often happens that in electronic projects, even of a very different nature, there are similarities as regards the organization of the control infrastructure. We therefore find one or more intelligent devices connected to various peripherals for the realization of the most disparate functions. To create a reusable and scalable communication technology, then *Philips Semiconductor* (now *NXP*) thought of developing a two-wire, bidirectional, serial communication bus called *Inter-Integrated-Circuit* (*IIC* or *I<sup>2</sup>C*).
 
 The peculiarity of this bus is that it implements the operating logic at the hardware level, directly in the integrated devices. This means that an *I<sup>2</sup>C* temperature sensor contains the communication interface towards the bus and is able to communicate directly, without other additional components.
+
+Some features of the bus are:
++ two communication lines, *SDA* (*serial data*) and *SCL* (*serial clock*)
++ each device on the bus has a unique address, with master-slave relationships. (remember that in a master-slave organization, the master commands and the slave obeys); the masters can act as transmitter or receiver
++ multi-master technology with collision detection and arbitration, in the event that several masters decide to simultaneously take control of the same bus
++ bidirectional 8-bit serial data transfers can take place with speeds up to 100kbit / s (Standard-mode), 400 kbit / s (Fast-mode), 1 Mbit / s (Fast-mode Plus), 3.4Mbit / s (High-speed mode)
++ unidirectional 8-bit serial data transfers can take place up to 5Mbit / s (Ultra Fast-mode)
++ filtering integrated in the data line chip to eliminate disturbances
++ the maximum number of devices that can be connected on the same bus is limited only by the total equivalent capacity (more devices, more lines, more nF)
+
