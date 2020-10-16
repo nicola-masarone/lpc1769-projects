@@ -132,3 +132,25 @@ Data transfer follows the scheme shown in the following figure:
   <img src="pic/fig9_I2C_data_trasnfer.png" width=700/>
 </p>
 
+The *master*, after the Start condition (S), outputs the 7-bit address of the *slave* concerned, plus an additional bit to indicate the communication direction: Read (bit "1") or Write (bit "0").
+<p align="center">
+  <img src="pic/fig10_I2C_address.png" width=600/>
+</p>
+
+During the 9th clock pulse the *slave* responds (if it can) with ACK ("0") on the SDA line. We note that with 7 address bits it is possible to identify up to 2<sup>7</sup> (128) different devices.
+
+A communication is always terminated with a Stop condition, but if the *master* wants to continue to occupy the bus it can instead issue a repeated Start condition and possibly address another *slave*.
+
+There can be various data transfer formats:
+
++ a *master-transmitter* communicates with a *slave-receiver*; the transfer direction does not change and the *slave* signals ACK to each byte received
+<p align="center">
+  <img src="pic/fig11_I2C_masterTXslaveRX.png" width=600/>
+</p>
+
+Note that the gray parts represent communications from *master* to *slave*, while the white parts represent communications from *slave* to *master*.
+
++ the *master-receiver* reads from a *slave-transmitter*; the communication changes direction because it begins with a writing of the address by the *master*, followed by ACK by the *slave*; then the *slave* becomes the *transmitter* and the *master* becomes the *receiver*, with ACK from this to every byte, except the last one, immediately before the Stop condition
+<p align="center">
+  <img src="pic/fig12_I2C_masterRXslaveTX.png" width=600/>
+</p>
