@@ -38,3 +38,15 @@ The separate bus sections are recognizable precisely by the *pull-up*s, which ca
   <img src="pic/fig1_I2C_tratte (1).png" width=600/>
 </p>
 
+We note that between the sections there are elements dedicated to the connection between them, each with specific properties. The figure below shows a *master* selector element, a section selector element and a signal repeater element.
+<p align="center">
+  <img src="pic/fig1_I2C_selettori.png" width=600/>
+</p>
+
+Among the *I<sup>2</sup>C* devices of the above diagram there is also a *bridge*, that is a translator element capable of making the *I<sup>2</sup>C* bus communicate with other buses (eg *SPI, UART, USB*).
+<p align="center">
+  <img src="pic/fig1_I2C_bridge.png" width=200/>
+</p>
+
+## The *I<sup>2</sup>C* bus protocol
+### Standard-mode, Fast-mode and Fast-mode Plus protocols
