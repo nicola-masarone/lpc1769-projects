@@ -7,5 +7,6 @@ The circuit used for the demonstration involves the use of the development board
 </p>
 
 *Yellow note translation: approximately 1k resistors must be sized according to the LED used*
+
 The groups of LEDs should clearly be duplicated on the sides of the intersection but the management program remains identical. The project code for LPC1769 is reported in this same repository.
 ## Software analysis
