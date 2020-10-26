@@ -19,7 +19,7 @@ The values are expressed in seconds and can be chosen individually.
 ## The initial settings
 The *RIT (Repetitive Interrupt Timer)* is used for timing, the documentation of which is presented in chapter 22 of the [*User Manual*](https://www.nxp.com/docs/en/user-guide/UM10360.pdf), while 9 *GPIO* pins adjusted in output are used for driving the LEDs. The initial settings are shown in the following image:
 <p align="center">
-  <img src="pic/impostazioni iniziali semaforo.png" width=700/>
+  <img src="pic/impostazioni_iniziali_semaforo.png" width=700/>
 </p>
 
 In the infinite *while* loop, the three crossing management times follow one another.
