@@ -29,3 +29,6 @@ In this time interval the vehicles of flow B can pass while those of flow A and 
   <img src="pic/tempoB.png" width=700/>
 </p>
 
+By invoking the *SetSemaphore(semaphore_lamps lamp, lamp_status status)* function it is possible to select the status of each single LED. These are identified with an enumerated type value *semaphore_lamps {RED_A, YELLOW_A, GREEN_A, RED_B, YELLOW_B, GREEN_B, RED_P, YELLOW_P, GREEN_P}* while the two possible on/off states are indicated with the enumerated type *lamp_status {ON, OFF}*.
+
+We note that at the end of the correct setting of the lights the timer delay time is loaded and the processor pause (*__asm volatile ("wfi")*) is commanded until the next awakening due to the interruption of the timer.
