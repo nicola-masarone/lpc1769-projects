@@ -44,3 +44,18 @@ In this time interval pedestrians can pass while the vehicles of both flow A and
   <img src="pic/tempoP.png" width=700/>
 </p>
 
+## The *SetSemaphore()* function
+This function allows the switching on or off of each single LED of the traffic light crossing. By way of example, part of the code relating only to section A is shown:
+<p align="center">
+  <img src="pic/SetSemaphore.png" width=550/>
+</p>
+
+Using a simple *switch* statement on the *semaphore_lamps* enumerated type, the required LED is selected by entering the appropriate case; here the status of the LED is controlled with instructions of the type *FIO0SET* and *FIO0CLR* on the corresponding bit of the port. We note that it is in this section that the association between the logical name of the LED and the pin of the *GPIO* that controls it occurs.
+## Interrupt service routine
+The *ISR* code relating to the *Repetitive Interrupt Timer* is extremely simple and only provides for the cancellation of the interrupt flag to allow for subsequent reuse:
+<p align="center">
+  <img src="pic/RIT_handler.png" width=900/>
+</p>
+
+## Possible developments
+The project could be improved by providing the possibility for pedestrians to accelerate the stop of vehicles by booking with a button. How could a solution for this type of functionality be developed?
