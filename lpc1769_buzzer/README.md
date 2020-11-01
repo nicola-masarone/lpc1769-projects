@@ -1,5 +1,5 @@
 # Overview
-The project realizes the driving of a [*CEP-2242*](cep-2242.pdf) buzzer by means of a *PWM* signal. In this mode it is possible to manage both the volume of the sound (by acting on the *duty-cycle*) and on the frequency of the sound (by modifying the period). The buzzer is controlled by a PNP [*BC557B*](BC556.pdf) type BJT, supplied in the *Embedded Artists* development kit. Use of the BJT avoids requiring excessive current to the microcontroller port.
+The project realizes the driving of a [*CEP-2242*](cep-2242.pdf) buzzer by means of a *PWM* signal. In this mode it is possible to manage both the volume of the sound (by acting on the *duty-cycle*) and on the frequency of the sound (by modifying the period). The buzzer is controlled by a PNP [*BC557B*](BC556.pdf) type BJT, supplied in the *Embedded Artists* development kit. Use of the BJT avoids requiring excessive current from the microcontroller port.
 ## Test wiring diagram
 In the following drawing we report the wiring diagram of the buzzer driven by the transistor in turn controlled by a switch able to supply 0V or 3V to its base.
 <p align="center">
