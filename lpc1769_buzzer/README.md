@@ -45,3 +45,8 @@ Then there are the settings to enable *PWM*, with period corresponding to the mi
   <img src="pic/buzzer_define.png" width=900/>
 </p>
 
+We use a high *duty cycle* to avoid distortion in the sound. The channel used is *PWM1.2* and not *PWM1.1* due to a fault on my personal development board.
+
+We note that whenever we set the main period of the *PWM* with *MR0* (sound frequency) we must also modify *MR2* to keep the constant *duty cycle* (sound intensity).
+
+After the initial settings the infinite *while* loop starts, with processor waiting for *interrupt*.
