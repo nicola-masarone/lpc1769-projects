@@ -34,3 +34,14 @@ We note that in this case the power supply is supplied by the development board 
 The C language project for MCUxpresso is contained in this same repository.
 
 The logic of the program foresees the setting of the *PWM* with variable period, from a maximum value to a minimum value, corresponding respectively to a variable sound frequency from a minimum to a maximum. The *duty-cycle* is adjusted as volume, bearing in mind that we operate in an inverted logic (thanks to the *PNP BJT*), so with low *duty-cycle* the volume is high while with high *duty-cycle* the volume is low. The rate of change of the *PWM* period (and therefore the frequency of the sound) is regulated by a system timer (*SYSTICK timer*).
+### Initial Settings
+In the start part of the program the *SYSTICK timer* is set, loading the *STRELOAD* register with *SYSTICK_MAX_VAL* (*0xFFFFFF*) divided by a value found experimentally to obtain an alarm-like sound.
+<p align="center">
+  <img src="pic/buzzer_main.png" width=900/>
+</p>
+
+Then there are the settings to enable *PWM*, with period corresponding to the minimum sound frequency (*262Hz*) and *duty-cyle* equal to *VOLUME* (*80%*).
+<p align="center">
+  <img src="pic/buzzer_define.png" width=900/>
+</p>
+
