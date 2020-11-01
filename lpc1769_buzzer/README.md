@@ -62,4 +62,4 @@ When the *SYSTICK timer interrupt* is triggered, the program jumps into the serv
 + What happens if we change the volume?
 + What happens if we change the speed of the *SISTICK timer*?
 + Could you rewrite the *interrupt* handler to generate a completely different sound?
-+ What changes in the circuit and in the software if we replace the *BJT PNP* with an *NPN* type (eg *P2N2222A*)?
++ What changes in the circuit and in the software if we replace the *BJT PNP* with an *NPN* type (eg [*P2N2222A*](P2N2222A-D.pdf))?
