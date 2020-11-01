@@ -1,0 +1,2 @@
+# Overview
+The project realizes the driving of a CEP-2242 buzzer by means of a PWM signal. In this mode it is possible to manage both the volume of the sound (by acting on the duty-cycle) and on the frequency of the sound (by modifying the period). The buzzer is controlled by a BJT PNP type BC557B, supplied in the Embedded Artists development kit. Use of the BJT avoids requiring excessive current to the microcontroller port.
