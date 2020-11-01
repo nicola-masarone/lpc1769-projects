@@ -1,0 +1,2 @@
+lpc1769.c:35:6:SysTick_Handler	4	static
+lpc1769.c:49:5:main	4	static
