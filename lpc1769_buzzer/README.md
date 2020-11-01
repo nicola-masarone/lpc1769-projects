@@ -50,3 +50,16 @@ We use a high *duty cycle* to avoid distortion in the sound. The channel used is
 We note that whenever we set the main period of the *PWM* with *MR0* (sound frequency) we must also modify *MR2* to keep the constant *duty cycle* (sound intensity).
 
 After the initial settings the infinite *while* loop starts, with processor waiting for *interrupt*.
+### *SYSTICK timer* interrupt service routine
+<p align="center">
+  <img src="pic/buzzer_systick_handler.png" width=800/>
+</p>
+
+When the *SYSTICK timer interrupt* is triggered, the program jumps into the service routine and modifies the sound frequency value by acting on the *MR0* register of the *PWM*. Once again we remind you that the *MR2* register must always be updated to keep the *duty-cycle* constant. The frequency variation ranges from a minimum value (*262Hz*) to a maximum value (*988Hz*), in *1Hz* increments each time the *SYSTICK timer* is triggered. When the maximum frequency is reached, it returns to the minimum value, and then the increase cycle starts again.
+## And now let's experiment
++ Now try to modify the project to use the *PWM1.1* channel as a command for the *BJT* base. Remember that the simple changes required are both hardware and software.
++ What happens if we change the frequency range?
++ What happens if we change the volume?
++ What happens if we change the speed of the *SISTICK timer*?
++ Could you rewrite the *interrupt* handler to generate a completely different sound?
++ What changes in the circuit and in the software if we replace the *BJT PNP* with an *NPN* type (eg *P2N2222A*)?
