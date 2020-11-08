@@ -20,7 +20,7 @@ We note that it is necessary to combine the mass of the development board for LP
 ## Software
 The following figure shows the *main()* function of the project that can be downloaded from this same repository.
 <p align="center">
-  <img src="pic/main_servotest.png" width=800/>
+  <img src="pic/main_servotest.png" width=900/>
 </p>
 
 The control channel used is *PWM1.2* for the well-known problem that occurred to my development board. The *PWM1MR0* register (which determines the *PWM* period) is loaded with the value corresponding to 20ms (1/50 of a second); the *PWM1MR2* register is preloaded with the value corresponding to the minimum duty-cyle (575μs) to bring the servomotor to the initial position.
@@ -29,7 +29,7 @@ In the *main()* function, the *Systick Timer* is also set to set the speed of ch
 
 The following figure shows the *Systick Timer* interrupt handler code:
 <p align="center">
-  <img src="pic/systickhandler_servotest.png" width=600/>
+  <img src="pic/systickhandler_servotest.png" width=700/>
 </p>
 
 Each time the timer is triggered, the duration of the *PWM* pulse is changed, from the minimum value (initial position) to the maximum value (final position), with an increase of 5μs. Once the maximum value is reached, it returns directly to the minimum value.
