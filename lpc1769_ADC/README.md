@@ -40,14 +40,14 @@ Instead of the potentiometer we can then mount the MCP9701 temperature sensor ma
 <p align="center">
   <img src="pic/MCP9700.png" width=150/>
 </p>
-The 3.3V power supply is just enough for the sensor which can have V<sub>DD</sub> input voltage from 3.1V up to 5.5V. From the data sheet we learn that the relationship between temperature in °C and output voltage in mV is the following:
+The 3.3V power supply is just enough for the sensor which can have V<sub>DD</sub> input voltage from 3.1V up to 5.5V. From the data sheet we can learn that the relationship between temperature in °C and output voltage in mV is the following:
 <p align="center">
   V<sub>OUT</sub>[mV] = T [°C] x 19.5 [mV/°C] + 400 [mV]
 </p>
-This relationship must obviously be used in the software for the correct representation of the data on the 7-segment display.
+This relationship must be used in the software for the correct representation of the data on the 7-segment display.
 
 ## Software analysis
-As regards the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display for which please refer to the *[7-segment display management](../lpc1769_7seg#7-segment-display-management)* experience.
+Regarding the software, only the parts relating to the analog-digital conversion will be highlighted, leaving out those already known for viewing the data on the 7-segment display for which please refer to the *[7-segment display management](../lpc1769_7seg#7-segment-display-management)* experience.
 ### main() function
 Among the main settings we find those relating to the ADC device:
 <p align="center">
