@@ -29,5 +29,5 @@ The following figure shows the *main()* function:
 The settings for the *A/D* converter include the selection of external pins *AD0.1* to *AD0.6*, the setting of continuous conversion at the lowest possible speed and the activation of the interrupt at the end of the conversion for the management of the results. For the *PWM* signal generator, the *PWM1.1* to *PWM1.6* pins are selected, a main period is set at 20ms (from the servomotors datasheet) and a minimum pulse duration value on each servomotor (starting position of the movement).
 At the end of the conversion of the *A/D* peripheral, the program jumps into the interrupt handling routine, shown in the following figure:
 <p align="center">
-  <img src="pic/ADC_IRQ_handler.png" width=700/>
+  <img src="pic/ADC_IRQ_handler.png" width=650/>
 </p>
