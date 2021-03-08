@@ -33,6 +33,6 @@ At the end of the conversion of the *A/D* peripheral, the program jumps into the
 </p>
 
 In the first section the conversion result is extracted (for each channel) with the instruction of the type:
-<p align="center">
-* ((AD0DR1&0xFFFF) *
-</p>
+<p align="center"><i>
+((AD0DR1&0xFFFF)
+</i></p>
