@@ -19,3 +19,15 @@ The servomotors are powered by a separate constant voltage generator between 4.8
 </p>
 
 By inserting the connector vertically into the breadboard, a simple assembly of the servomotor connectors is then carried out, placing them side by side. The jumper connections are then made on the breadboard for the power supply and the ground of the individual servomotors (red and black cable) to the longitudinal lines connected to the external power supply. Finally, the connections of the commands are made by means of yellow cables that connect respectively the servomotors from *Servo#1* to *Servo#6* to the *PWM* channels which go from *PWM1.1 (P2[0])* to *PWM1.6 (P2[5])*.
+## Software
+The project code can be downloaded from this same repository. The program foresees the use of two peripherals integrated in the microcontroller: the analog to digital converter (*A/D*), for the acquisition of the command potentiometers, and the *PWM* signal generator, for the servomotors control.
+The following figure shows the *main()* function:
+<p align="center">
+  <img src="pic/main.png" width=900/>
+</p>
+
+The settings for the *A/D* converter include the selection of external pins *AD0.1* to *AD0.6*, the setting of continuous conversion at the lowest possible speed and the activation of the interrupt at the end of the conversion for the management of the results. For the *PWM* signal generator, the *PWM1.1* to *PWM1.6* pins are selected, a main period is set at 20ms (from the servomotors datasheet) and a minimum pulse duration value on each servomotor (starting position of the movement).
+At the end of the conversion of the *A/D* peripheral, the program jumps into the interrupt handling routine, shown in the following figure:
+<p align="center">
+  <img src="pic/ADC_IRQ_handler.png" width=700/>
+</p>
