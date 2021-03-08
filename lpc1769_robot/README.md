@@ -6,3 +6,6 @@ The project provides for the manual control of 6 servomotors with an LPC1769 dev
 This system represents a first step towards the development of a fully automated arm, capable of replicating more or less complex trajectories recorded during a learning period under the guidance of an external operator.
 ## Assembly plan
 The complete circuit is presented in the following image. It should be noted that the power supply of the servomotors, shown as a pack of 4 stylus batteries in series, can obviously be obtained from a bench generator, set between 4.8V and 6V. The power supply of the microcontroller board is connected to the same reference of the power supply for the motors by means of a black cable for joining the grounds.
+<p align="center">
+  <img src="pic/servo_manual_bb.png" width=800/>
+</p>
