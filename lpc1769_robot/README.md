@@ -36,3 +36,8 @@ In the first section the conversion result is extracted (for each channel) with 
 <p align="center"><i>
 ((AD0DR1&0xFFFF)
 </i></p>
+Then the current value is averaged with the previous values and assigned to the variable that stores it:
+<p align="center"><i>
+ADCvalue1 = (ADCvalue1*(ADC_avg-1) + ((AD0DR1&0xFFFF)))/ADC_avg;
+</i></p>
+
