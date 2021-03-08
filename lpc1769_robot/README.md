@@ -43,3 +43,4 @@ Then the current value is averaged with the previous values and assigned to the 
 ADCvalue1 = (ADCvalue1*(ADC_avg-1) + ((AD0DR1&0xFFFF)))/ADC_avg;
 ```
 
+In the next section, a value proportional to the reading of the corresponding *A/D* channel is assigned to each *PWM* channel, so that when the potentiometer *n* is in the minimum position the servomotor *n* is in its initial position and when the potentiometer *n* is in the maximum position the servomotor *n* is in its final position.
