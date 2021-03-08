@@ -9,3 +9,6 @@ The complete circuit is presented in the following image. It should be noted tha
 <p align="center">
   <img src="pic/servo_manual_bb.png" width=800/>
 </p>
+
+### Adjustment section
+The ends of the servo motor control potentiometers are connected one to the microcontroller power supply (3.3V) and the other to the ground of the development board. The central pins of potentiometers Pot#1 to Pot#6 are connected to the input channels of the microcontroller's 12bit integrated analog to digital converter (A/D). Note that the converter channels AD0.1 to AD06 are used, corresponding to pins P0[24], P0[25], P0[26], P1[30], P1[31] and P0[3].
