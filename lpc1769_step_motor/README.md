@@ -94,3 +94,4 @@ Immediately after the execution of the *run_steps()* function (which we will ana
   <img src="pic/run_steps.png" width=550/>
 </p>
 
+This function performs a preparatory work for the execution of the chosen sequence. As the first instruction, it saves the total number of steps to be performed in the global variable *total_steps*. Subsequently, by means of a *switch* instruction, the desired sequence is selected by addressing the global pointer *seq_ptr* to one of the three vectors in which the sequences of values for the signals A +, A-, B + and B- have been described (see the following figure):
