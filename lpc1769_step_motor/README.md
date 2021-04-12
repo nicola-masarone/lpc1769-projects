@@ -118,3 +118,7 @@ In the next instruction we update the count of the steps taken by increasing the
 
 The last instruction of the *handler* code is, as always, the cancellation of the *interrupt* flag to signal that the interruption has been managed.
 
+## Final conclusions
+The project presented allows the driving of a bipolar stepper motor at constant speed, with the possibility of choosing the type of driving (*wave*, *full-step* or *half-step*) and the number of steps performed for each stroke.
+
+The limit of the constant speed design consists in the fact that it allows only low speed movements (to avoid losing steps) and therefore with greater vibrations. A possible development involves the execution of the movement with variable speed by managing an acceleration capable of reaching higher speeds (less vibrations) without losing steps.
