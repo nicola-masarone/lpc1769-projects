@@ -16,3 +16,8 @@ The data of the motor in question are shown in the following image (last row of 
   <img src="pic/17HS13-0404S.png" width=600/>
 </p>
 
+The power supply voltage (12V) and current data for each phase (0.4A) should be noted. The resistance of each phase is 30 Ohm (12V / 0.4A). The motor is of the bipolar type and therefore has 4 connection wires, as shown in the following figure:
+<p align="center">
+  <img src="pic/bipolar-4wires.png" width=200/>
+</p>
+
