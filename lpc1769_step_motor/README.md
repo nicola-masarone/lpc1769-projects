@@ -70,3 +70,8 @@ The overall circuit is therefore the following:
 </p>
 
 For those wondering why the wiring starts from P2.1 and not from P2.0, the answer is very simple: the choice was obligatory, as pin P2.0 of the development board was damaged (:confounded:).
+
+## The firmware
+The project code is in this same repository.
+
+### The *main()* function
