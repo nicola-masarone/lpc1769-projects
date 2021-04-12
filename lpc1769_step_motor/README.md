@@ -105,3 +105,16 @@ At the same time, the length of the selected sequence is entered in the global v
 
 At the end of this preparatory work, *Timer0* is started. Remember that upon returning from the *run_steps()* function the program finds the *wfi* instruction that puts the processor in *standby* until the next *Timer0 interrupt* (instant in which the processor wakes up to execute the *IRQ handler* of *Timer0*)
 
+### *Timer0 IRQ* handler
+<p align="center">
+  <img src="pic/timer0_irqhandler.png" width=600/>
+</p>
+
+Inside the *IRQ* manager of the *Timer0* as the first instruction we have the assignment to the output bits *P2.1-P2.4* of the current value of the sequence in use. To correctly index the current value we use the global variable *cur_state* previously initialized to zero. In this way we start from the first position of the desired vector.
+
+Then we select based on the value of the global variable *cur_rot* whether to increase or decrease the current state of the sequence (used as an index of the vectors). When *cur_state* reaches its upper limit (in the case of an increase) or lower (in the case of a decrease) it is brought back to the opposite limit.
+
+In the next instruction we update the count of the steps taken by increasing the global variable *cur_step*. If we have completed the number of steps we stop and reset the *Timer0* (to block the movement of the motor), also clearing the global variable *cur_step*.
+
+The last instruction of the *handler* code is, as always, the cancellation of the *interrupt* flag to signal that the interruption has been managed.
+
