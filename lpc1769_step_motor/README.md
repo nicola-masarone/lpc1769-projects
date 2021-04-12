@@ -21,3 +21,8 @@ The power supply voltage (12V) and current data for each phase (0.4A) should be 
   <img src="pic/bipolar-4wires.png" width=200/>
 </p>
 
+On the datasheet we also find the driving sequence for the full-step and half-step modes (following image):
+<p align="center">
+  <img src="pic/sequence.png" width=400/>
+</p>
+
