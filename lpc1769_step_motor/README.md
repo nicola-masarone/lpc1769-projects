@@ -44,3 +44,4 @@ From the following figure we can derive the connections to be made to connect th
   <img src="pic/L298N.png" width=600/>
 </p>
 
+In particular, phase A of the motor must be connected to pins 1-2 (A + black, A- green) while phase B must be connected to pins 13-14 (B + red, B- blue). The 12V input power supply to the module is connected to pin 4, the ground to pin 5. Pin 6 supplies the 5V voltage for the microcontroller board. Note that the mass of the microcontroller board must be combined with that of the module.
