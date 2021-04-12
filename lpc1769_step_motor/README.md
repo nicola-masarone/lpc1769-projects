@@ -82,7 +82,7 @@ The project code is in this same repository.
   <img src="pic/main.png" width=800/>
 </p>
 
-In the first instruction, pins *P2.1* to *P2.4* are set as an output to output the motor phase control signals. The second instruction sets a mask on bits *P2.0, P2.5, P2.6, P2.7*. In this way, every time we write a byte on port 2 (from *P2.0* to *P2.7*) only the NOT masked bits will change value (from *P2.1* to *P2.4*).
+In the first instruction, pins *P2.1* to *P2.4* are set as output to emit the motor phase control signals. The second instruction sets a mask on bits *P2.0, P2.5, P2.6, P2.7*. In this way, every time we write a byte on port 2 (from *P2.0* to *P2.7*) only the NOT masked bits will change value (from *P2.1* to *P2.4*).
 
 The following instructions concern *Timer0*. In particular we want the *reset* (zeroing) of the *Timer0* when it reaches the value loaded in the *MatchRegister* and at the same time the activation of the *interrupt*. In the next instruction, *interrupt* routing through *NVIC* is enabled. The last instruction for the *Timer0* foresees the loading of the *MatchRegister* with the expected count value for the *reset/interrupt*. In our case the value corresponds to a time interval of one 50th of a second, therefore the motor frequency will be equal to 50Hz (50 steps per second, corresponding to a time of 4 seconds for a complete rotation in *wave* and *full-step* and 8 seconds for a full rotation in *half-step*).
 
