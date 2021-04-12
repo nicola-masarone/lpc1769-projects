@@ -40,3 +40,7 @@ The module is also supplied with a 5V voltage regulator useful for powering the 
 We note that the 5V regulator has the cooling fin directly welded on the small printed circuit, with consequent limited possibility of dissipation.
 
 From the following figure we can derive the connections to be made to connect the module to the stepper motor and the microcontroller.
+<p align="center">
+  <img src="pic/L298N.png" width=600/>
+</p>
+
