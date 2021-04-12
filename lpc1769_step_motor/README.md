@@ -60,3 +60,12 @@ From the following figure we can derive the connections to be made to connect th
     14. "-" connector for DC motor B or "B-" for stepper motor*
 
 In particular, phase A of the motor must be connected to pins 1-2 (A + black, A- green) while phase B must be connected to pins 13-14 (B + red, B- blue). The 12V input power supply to the module is connected to pin 4, the ground to pin 5. Pin 6 supplies the 5V voltage for the microcontroller board. Note that the mass of the microcontroller board must be combined with that of the module.
+
+## Assembly plan
+Pins 7 and 12 are connected with fixed 5V jumpers to always enable the two H bridges of the L298 integrated circuit. The four input pins 8-11 receive the phase signals from the microcontroller output pins: P2.1 to p2.4.
+
+The overall circuit is therefore the following:
+<p align="center">
+  <img src="pic/stepper_bb.png" width=600/>
+</p>
+
