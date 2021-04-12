@@ -33,3 +33,10 @@ We note that in the firmware project the motor phases will be named A +, A-, B +
 <img align="left" src="pic/driverL298N.png" width=150/> A module based on the L298 integrated circuit was used for the power driver. The characteristics of the module (very widespread) can be found for example on the [*RobotStore*](https://www.robotstore.it/Controllo-motori-con-driver-L298N-per-motori-DC-e-motori-passo-passo) website while the integrated datasheet is available on the manufacturer's website (ST Microelectronics) at the following address: [*L298*](https://www.st.com/en/motor-drivers/l298.html)
 
 The module is also supplied with a 5V voltage regulator useful for powering the board with microcontroller. It should be noted that this regulator can be used only if the general power supply voltage of the module is contained within 12V. Remember that the power dissipated by the 5V linear regulator is equal to the difference between its input voltage (12V) and output voltage (5V) multiplied by the current supplied. Assuming an absorbed current of 100mA for the development board for LPC1769, we have a dissipated power on the regulator equal to:
+<p align="center">
+  <img src="pic/formula.png" width=250/>
+</p>
+
+We note that the 5V regulator has the cooling fin directly welded on the small printed circuit, with consequent limited possibility of dissipation.
+
+From the following figure we can derive the connections to be made to connect the module to the stepper motor and the microcontroller.
