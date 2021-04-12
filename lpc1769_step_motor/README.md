@@ -8,3 +8,5 @@ The dimensional characteristics of the motor are briefly summarized in the figur
 <p align="center">
   <img src="pic/dimensions.png" width=400/>
 </p>
+
+In particular we note that the motor has a step angle of 1.8 ° which means that for a complete rotation the motor must take 200 steps (360 ° / 1.8 °) in full-step mode.
