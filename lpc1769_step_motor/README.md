@@ -26,3 +26,4 @@ On the datasheet we also find the driving sequence for the full-step and half-st
   <img src="pic/sequence.png" width=400/>
 </p>
 
+We note that in the firmware project the motor phases will be named A +, A-, B +, B- with A- corresponding to C and B- corresponding to D. In this way we will indicate for the first winding a positive terminal A + and a negative A- and for the second winding a positive terminal B + and a negative terminal B-.
