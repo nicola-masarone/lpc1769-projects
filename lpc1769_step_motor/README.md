@@ -98,3 +98,10 @@ This function performs a preparatory work for the execution of the chosen sequen
 <p align="center">
   <img src="pic/step_sequence.png" width=1000/>
 </p>
+
+For those who have noticed the 0 present in the least significant position in the values ​​of all the sequences, remember that the command bits are sent to pins *P2.1-P2.4* (again because pin *P2.0* of the development board is damaged). We also note that the *wave* and *full-step* sequences take 4 different words while the *half-step* sequence takes 8.
+
+At the same time, the length of the selected sequence is entered in the global variable *seq_len*.
+
+At the end of this preparatory work, *Timer0* is started. Remember that upon returning from the *run_steps()* function the program finds the *wfi* instruction that puts the processor in *standby* until the next *Timer0 interrupt* (instant in which the processor wakes up to execute the *IRQ handler* of *Timer0*)
+
