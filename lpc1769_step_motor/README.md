@@ -44,7 +44,7 @@ From the following figure we can derive how to connect the module to the stepper
   <img src="pic/L298N.png" width=600/>
 </p>
 
-*Image legend translation: 
+Image legend translation: 
 + 1   "+" connector for DC motor A or "A+" for stepper motor
 + 2   "-" connector for DC motor A or "A-" for stepper motor
 + 3   12V jumper - remove the jumper if you are using a power supply voltage higher than 12V; this enables the 5V voltage regulator
@@ -58,7 +58,7 @@ From the following figure we can derive how to connect the module to the stepper
 + 11   IN4
 + 12   Jumper for the activation of the DC motor B; keep the jumper in place if using a stepper motor; connect to PWM output to enable DC motor speed control
 + 13   "+" connector for DC motor B or "B+" for stepper motor
-+ 14   "-" connector for DC motor B or "B-" for stepper motor*
++ 14   "-" connector for DC motor B or "B-" for stepper motor
 
 In particular, phase A of the motor must be connected to pins 1-2 (A + black, A- green) while phase B must be connected to pins 13-14 (B + red, B- blue). The 12V input power supply to the module is connected to pin 4, the ground to pin 5. Pin 6 supplies the 5V voltage for the microcontroller board. Note that the mass of the microcontroller board must be combined with that of the module.
 
