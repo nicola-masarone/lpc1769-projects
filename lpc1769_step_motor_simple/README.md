@@ -27,3 +27,11 @@ The *main()* function code shown in the following figure has a few changes:
   <img src="pic/main_step_simple.png" width=800/>
 </p>
 
+In particular we note that the initial value of register *T0MR0* is loaded with the contents of the first location of the array *acc_times[]* (array that we will know in a bit). The other, less important change concerns the amplitude of the demo movement which has been increased to 2000 steps.
+
+### *run_steps()* function
+The code of the function was modified by inserting a preamble that assigns values to three new global variables: acc_len, const_len, dec_len containing respectively the length in steps of the acceleration, of the constant speed section and of the deceleration.
+<p align="center">
+  <img src="pic/run_steps_trap.png" width=800/>
+</p>
+
