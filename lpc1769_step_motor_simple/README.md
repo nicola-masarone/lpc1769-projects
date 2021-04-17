@@ -90,3 +90,23 @@ that is, the ratio between the speed variation and the time interval in which th
 </p>
 
 in which we pass from the old speed to the new one (from v1 to v2) in the new step time T<sub>2</sub>. With some algebraic passages we get:
+<p align="center">
+  <img src="pic/formula3.png" width=200/>
+</p>
+
+<p align="center">
+  <img src="pic/formula4.png" width=200/>
+</p>
+
+<p align="center">
+  <img src="pic/formula5.png" width=200/>
+</p>
+
+<p align="center">
+  <img src="pic/formula6.png" width=200/>
+</p>
+
+<p align="center">
+  <img src="pic/formula7.png" width=200/>
+</p>
+
