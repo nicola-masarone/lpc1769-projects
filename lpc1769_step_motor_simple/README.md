@@ -35,3 +35,6 @@ The code of the function was modified by inserting a preamble that assigns value
   <img src="pic/run_steps_trap.png" width=800/>
 </p>
 
+In the first *if()* structure we verify that the total length of the movement is contained within the *MAX_RUN_LEN* value (possibly limiting it).
+
+In the second *if()* structure it is checked whether the total length of the movement is greater than the sum of the constants *ACC_LEN* and *DEC_LEN* which contain the maximum length in steps of acceleration and deceleration (equal to the length of the vector *acc_times[]*). In this case there is an acceleration ramp with length *ACC_LEN*, a deceleration ramp equal to *DEC_LEN* and a constant length section equal to the remaining steps (net of acceleration and deceleration). If, on the other hand, the total length of the movement is less than the sum of the acceleration and deceleration ramps then there is no constant stretch (the maximum speed is not reached) and the profile will only provide acceleration and deceleration (reduced in length). In this case the trapezoidal velocity profile becomes triangular:
