@@ -141,3 +141,10 @@ By expanding the calculation to the right for 400 steps (counted in the row *n. 
 The third row simply shows the sum of the times *T[s]* to get the total time elapsed from the beginning, useful for the final graph. Here we can verify that from 0.1 seconds to 2.83 seconds the motor frequency goes from 10 *Hz* to 280.7 *Hz*, in linear progression, with an acceleration equal to:
 <p align="center"><i>a = (280.7-10)/(2.83-0.1) ≈ 99 [1/s<sup>2</sup>]</i></p>
 in line with the value chosen at the beginning in the spreadsheet.
+
+The precise values at the end of the ramp (step 400) are shown in the following figure:
+<p align="center">
+  <img src="pic/calc_5.png" width=250/>
+</p>
+
+If you want to change the speed profile, you can choose different values for the acceleration, the minimum speed and the length of the vector. Obviously, everything must be calibrated on the real mechanics of use of the stepper motor.
