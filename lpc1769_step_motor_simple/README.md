@@ -16,3 +16,7 @@ The objective of the current project is the realization of a speed profile for t
 </p>
 
 ## Hardware
+As for the hardware settings, refer to [*constant speed stepper motor*](https://github.com/nicola-masarone/lpc1769-projects/tree/master/lpc1769_step_motor) project, as there are no changes planned for the current project.
+
+## Firmware
+The code can be downloade from thi same repository. The modifications substantially concern a change of the value loaded in the *T0MR0* register in order to obtain a variable time interval between one step and another and, consequently, a variable motor speed. Let's look at the changes in the firmware in detail.
