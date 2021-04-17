@@ -38,3 +38,21 @@ The code of the function was modified by inserting a preamble that assigns value
 In the first *if()* structure we verify that the total length of the movement is contained within the *MAX_RUN_LEN* value (possibly limiting it).
 
 In the second *if()* structure it is checked whether the total length of the movement is greater than the sum of the constants *ACC_LEN* and *DEC_LEN* which contain the maximum length in steps of acceleration and deceleration (equal to the length of the vector *acc_times[]*). In this case there is an acceleration ramp with length *ACC_LEN*, a deceleration ramp equal to *DEC_LEN* and a constant length section equal to the remaining steps (net of acceleration and deceleration). If, on the other hand, the total length of the movement is less than the sum of the acceleration and deceleration ramps then there is no constant stretch (the maximum speed is not reached) and the profile will only provide acceleration and deceleration (reduced in length). In this case the trapezoidal velocity profile becomes triangular:
+<p align="center">
+  <img src="pic/vel_triang.png" width=200/>
+</p>
+
+We note that, in this case, half the length of the movement is assigned to the acceleration ramp and half to the deceleration ramp; moreover, in the case of an odd total length, the extra pitch resulting from the truncation to the lower integer of the ramps is assigned to the constant speed section.
+
+These constants are all defined in the new header file *step_times.h*:
+<p align="center">
+  <img src="pic/step_times.h.png" width=200/>
+</p>
+
+Below is the definition of the new global variables:
+<p align="center">
+  <img src="pic/var_def.png" width=600/>
+</p>
+
+We note that the vector *acc_times[]* is declared as *extern* and therefore is defined in another file (*steps_times.c*)
+
