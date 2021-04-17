@@ -144,7 +144,7 @@ in line with the value chosen at the beginning in the spreadsheet.
 
 The precise values at the end of the ramp (step 400) are shown in the following figure:
 <p align="center">
-  <img src="pic/calc_5.png" width=250/>
+  <img src="pic/calc_5.png" width=115/>
 </p>
 
 If you want to change the speed profile, you can choose different values for the acceleration, the minimum speed and the length of the vector. Obviously, everything must be calibrated on the real mechanics of use of the stepper motor.
