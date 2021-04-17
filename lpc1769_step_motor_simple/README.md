@@ -110,7 +110,7 @@ in which we pass from the old speed to the new one (from v1 to v2) in the new st
   <img src="pic/formula7.png" width=200/>
 </p>
 
-The last expression represents a II degree equation in the unknown Tzsub>2</sub> (new step time), provided that T<sub>1</sub> (previous step time) and acceleration are known. Applying the solution formula of the second degree equation (for the positive solution only), we obtain:
+The last expression represents a II degree equation in the unknown T<sub>2</sub> (new step time), provided that T<sub>1</sub> (previous step time) and acceleration are known. Applying the solution formula of the second degree equation (for the positive solution only), we obtain:
 <p align="center">
   <img src="pic/formula8.png" width=200/>
 </p>
@@ -131,8 +131,13 @@ Line *T[s]* of the spreadsheet contains the values in seconds for the step time:
 </p>
 
 In line *T0MR0* we obtain the numerical value to be entered in the *Timer0* register, as the product between the constant *PCLK_TIMER0* (24MHz) and the current value of the step time in seconds *T[s]*. In the example in the figure:
-<p align="center"><i>T0MR0 = 24MHz * 0,061975 = 1487401</i></p>
+<p align="center"><i>T0MR0 = 24MHz * 0.061975 = 1487401</i></p>
 <p align="center">
   <img src="pic/calc_4.png" width=250/>
 </p>
 
+By expanding the calculation to the right for 400 steps (counted in the row *n. steps*) we obtain the sequence of values to be loaded into the vector *acc_times[]*.
+
+The third row simply shows the sum of the times *T[s]* to get the total time elapsed from the beginning, useful for the final graph. Here we can verify that from 0.1 seconds to 2.83 seconds the motor frequency goes from 10 *Hz* to 280.7 *Hz*, in linear progression, with an acceleration equal to:
+<p align="center"><i>a = (280.7-10)/(2.83-0.1) ≈ 99 [1/s<sup>2</sup>]</i></p>
+in line with the value chosen at the beginning in the spreadsheet.
