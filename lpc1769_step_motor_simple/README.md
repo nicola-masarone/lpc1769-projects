@@ -110,3 +110,9 @@ in which we pass from the old speed to the new one (from v1 to v2) in the new st
   <img src="pic/formula7.png" width=200/>
 </p>
 
+The last expression represents a II degree equation in the unknown Tzsub>2</sub> (new step time), provided that T<sub>1</sub> (previous step time) and acceleration are known. Applying the solution formula of the second degree equation (for the positive solution only), we obtain:
+<p align="center">
+  <img src="pic/formula8.png" width=200/>
+</p>
+
+The formula just obtained can be used in a spreadsheet to obtain the values to be loaded into the *T0MR0* register of the *Timer0*. In the following figure an excerpt from the spreadsheet:
