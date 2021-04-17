@@ -2,7 +2,7 @@
 ## Introduction
 In the previous project [*constant speed stepper motor*](https://github.com/nicola-masarone/lpc1769-projects/tree/master/lpc1769_step_motor) we have introduced a type of control by using a *Timer* for the motor steps sequence. The speed of the *Timer* has been set to a constant value, thus determining a rectangular speed profile for the stepper motor's speed. We have already concluded that having such a speed profile represents a limit, since to avoid losing steps it is necessary to limit the motor rotation speed a lot. In the following image we review the point of the *firmware* code of the previous project where we set the constant speed of the *stepper* motor:
 <p align="center">
-  <img src="pic/main_red.png" width=550/>
+  <img src="pic/main_red.png" width=500/>
 </p>
 
 obtaining a rectangular speed profile as shown in the following figure:
@@ -51,7 +51,7 @@ These constants are all defined in the new header file *step_times.h*:
 
 Below is the definition of the new global variables:
 <p align="center">
-  <img src="pic/var_def.png" width=600/>
+  <img src="pic/var_def.png" width=800/>
 </p>
 
 We note that the vector *acc_times[]* is declared as *extern* and therefore is defined in another file (*steps_times.c*)
