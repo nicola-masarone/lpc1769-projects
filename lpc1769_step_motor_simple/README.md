@@ -68,3 +68,9 @@ In the *else* section we check with another *if()* statement if *cur_step* is gr
 
 If the previous *if()* statement is false it means that we are in the constant speed phase and the value of the *Timer0* register is not modified but left at the last value reached during the previous acceleration ramp.
 
+### *acc_times[]* array
+The vector *acc_times[]* contains in its locations the values of the register *T0MR0* corresponding to the different speeds of the *Timer0* and therefore of the *stepper* motor. This vector is defined with constant values in the *step_times.c* file:
+<p align="center">
+  <img src="pic/step_times.c.png" width=600/>
+</p>
+
