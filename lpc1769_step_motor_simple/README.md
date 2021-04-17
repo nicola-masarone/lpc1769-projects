@@ -116,3 +116,7 @@ The last expression represents a II degree equation in the unknown Tzsub>2</sub>
 </p>
 
 The formula just obtained can be used in a spreadsheet to obtain the values to be loaded into the *T0MR0* register of the *Timer0*. In the following figure an excerpt from the spreadsheet:
+<p align="center">
+  <img src="pic/calc_1.png" width=600/>
+</p>
+
