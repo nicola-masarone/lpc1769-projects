@@ -84,3 +84,9 @@ To obtain the times of the *acc_times[]* array we must first define the paramete
   <img src="pic/formula1.png" width=100/>
 </p>
 
+that is, the ratio between the speed variation and the time interval in which this variation occurs. In our project the motor speed is inversely proportional to the step time (loaded in *Timer0*). The previous formula can therefore be explained as:
+<p align="center">
+  <img src="pic/formula2.png" width=200/>
+</p>
+
+in which we pass from the old speed to the new one (from v1 to v2) in the new step time T<sub>2</sub>. With some algebraic passages we get:
