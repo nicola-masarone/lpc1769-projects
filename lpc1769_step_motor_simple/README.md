@@ -120,3 +120,8 @@ The formula just obtained can be used in a spreadsheet to obtain the values to b
   <img src="pic/calc_1.png" width=600/>
 </p>
 
+The first parameter *PCLK_TIMER0* represents the clock frequency of *Timer0* (24MHz). The acceleration *a* has been set assuming a stepper motor speed that passes from a minimum of 1/10 of a second (10Hz) to a maximum of 1/1000 of a second (1kHz) in 10 seconds of time:
+<p align="center">
+  <img src="pic/calc_2.png" width=250/>
+</p>
+
