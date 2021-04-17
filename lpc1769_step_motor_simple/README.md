@@ -2,7 +2,7 @@
 ## Introduction
 In the previous project [*constant speed stepper motor*](https://github.com/nicola-masarone/lpc1769-projects/tree/master/lpc1769_step_motor) we have introduced a type of control by using a *Timer* for the motor steps sequence. The speed of the *Timer* has been set to a constant value, thus determining a rectangular speed profile for the stepper motor's speed. We have already concluded that having such a speed profile represents a limit, since to avoid losing steps it is necessary to limit the motor rotation speed a lot. In the following image we review the point of the *firmware* code of the previous project where we set the constant speed of the *stepper* motor:
 <p align="center">
-  <img src="pic/main_red.png" width=600/>
+  <img src="pic/main_red.png" width=550/>
 </p>
 
 obtaining a rectangular speed profile as shown in the following figure:
@@ -20,3 +20,10 @@ As for the hardware settings, refer to [*constant speed stepper motor*](https://
 
 ## Firmware
 The code can be downloade from thi same repository. The modifications substantially concern a change of the value loaded in the *T0MR0* register in order to obtain a variable time interval between one step and another and, consequently, a variable motor speed. Let's look at the changes in the firmware in detail.
+
+### *main()* function
+The *main()* function code shown in the following figure has a few changes:
+<p align="center">
+  <img src="pic/main_step_simple.png" width=800/>
+</p>
+
