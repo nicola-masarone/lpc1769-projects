@@ -125,3 +125,14 @@ The first parameter *PCLK_TIMER0* represents the clock frequency of *Timer0* (24
   <img src="pic/calc_2.png" width=250/>
 </p>
 
+Line *T[s]* of the spreadsheet contains the values in seconds for the step time: the first value 0.1 s is set manually and corresponds to a frequency of 10 *Hz*, shown in line *f[Hz]*. The second value of *T[s]* is obtained with the formula seen above (using the time of the previous cell as T<sub>1</sub> value and the value of cell *a* as acceleration):
+<p align="center">
+  <img src="pic/calc_3.png" width=250/>
+</p>
+
+In line *T0MR0* we obtain the numerical value to be entered in the *Timer0* register, as the product between the constant *PCLK_TIMER0* (24MHz) and the current value of the step time in seconds *T[s]*. In the example in the figure:
+<p align="center"><i>T0MR0 = 24MHz * 0,061975 = 1487401</i></p>
+<p align="center">
+  <img src="pic/calc_4.png" width=250/>
+</p>
+
