@@ -56,3 +56,15 @@ Below is the definition of the new global variables:
 
 We note that the vector *acc_times[]* is declared as *extern* and therefore is defined in another file (*steps_times.c*)
 
+### Timer0 IRQ handler
+The *interrupt* handling function of *Timer0* encompasses the actual *firmware* modification to obtain a variable speed profile. The following figure highlights the part of the code that modifies the speed of the *stepper* motor:
+<p align="center">
+  <img src="pic/timer0_irqhandler_step_simple.png" width=600/>
+</p>
+
+Let's analyze the *if()* structure which compares the *cur_step* counter (current step) with the value of the expected length for the acceleration (calculated in the *run_steps()* function): if *cur_step* is less than *acc_len* we are in acceleration and the *T0MR0* register is loaded the corresponding value of the vector *acc_times[]* (defined in the file *steps.c*; we refer to a later discussion on how to calculate the values present in the vector *acc_times[]*). We note that at each execution of the *handler* manager we are simultaneously executing a new step and modifying the current value of the motor speed.
+
+In the *else* section we check with another *if()* statement if *cur_step* is greater than the sum of the acceleration phase and the constant speed phase; in this case we are in the deceleration phase and we use the same vector *acc_times[]* but read backwards (from maximum to minimum speed). We note that as an index to travel the vector backwards we use the same length of the *dec_len* deceleration, decremented by one using the prefix --.
+
+If the previous *if()* statement is false it means that we are in the constant speed phase and the value of the *Timer0* register is not modified but left at the last value reached during the previous acceleration ramp.
+
