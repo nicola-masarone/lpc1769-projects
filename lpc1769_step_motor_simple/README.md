@@ -78,3 +78,9 @@ The values have been obtained separately with a spreadsheet, through a procedure
 
 To modify the acceleration-deceleration profile, it is necessary to recalculate the values of the *acc_times[]* array and then recompile the *firmware* project code by rewriting it in the flash memory of the microcontroller.
 
+### Calculation of the *acc_times[]* array
+To obtain the times of the *acc_times[]* array we must first define the parameters involved in the definition of acceleration. Recall the definition of acceleration:
+<p align="center">
+  <img src="pic/formula1.png" width=100/>
+</p>
+
