@@ -74,3 +74,7 @@ The vector *acc_times[]* contains in its locations the values of the register *T
   <img src="pic/step_times.c.png" width=600/>
 </p>
 
+The values have been obtained separately with a spreadsheet, through a procedure that we will pass on to deal with later. We note however that the length of the vector has been defined equal to the constant *ACC_LEN* (400). This means that the acceleration from minimum to maximum speed (and vice versa) is completed in 400 steps (two motor revolutions in *WAVE* or *FULL-STEP* mode or one revolution in *HALF-STEP* mode).
+
+To modify the acceleration-deceleration profile, it is necessary to recalculate the values of the *acc_times[]* array and then recompile the *firmware* project code by rewriting it in the flash memory of the microcontroller.
+
