@@ -37,12 +37,12 @@ The code of the function was modified by inserting a preamble that assigns value
 
 In the first *if()* structure we verify that the total length of the movement is contained within the *MAX_RUN_LEN* value (possibly limiting it).
 
-In the second *if()* structure it is checked whether the total length of the movement is greater than the sum of the constants *ACC_LEN* and *DEC_LEN* which contain the maximum length in steps of acceleration and deceleration (equal to the length of the vector *acc_times[]*). In this case there is an acceleration ramp with length *ACC_LEN*, a deceleration ramp equal to *DEC_LEN* and a constant length section equal to the remaining steps (net of acceleration and deceleration). If, on the other hand, the total length of the movement is less than the sum of the acceleration and deceleration ramps then there is no constant stretch (the maximum speed is not reached) and the profile will only provide acceleration and deceleration (reduced in length). In this case the trapezoidal velocity profile becomes triangular:
+In the second *if()* structure it is checked whether the total length of the movement is greater than the sum of the constants *ACC_LEN* and *DEC_LEN* which contain the maximum length in steps of acceleration and deceleration (equal to the length of the vector *acc_times[]*). In this case, there is an acceleration ramp with length *ACC_LEN*, a deceleration ramp equal to *DEC_LEN* and a constant length section equal to the remaining steps (net of acceleration and deceleration). If, on the other hand, the total length of the movement is less than the sum of the acceleration and deceleration ramps then there is no constant stretch (the maximum speed is not reached) and the profile will only provide acceleration and deceleration (reduced in length). In this case the trapezoidal velocity profile becomes triangular:
 <p align="center">
   <img src="pic/vel_triang.png" width=200/>
 </p>
 
-We note that, in this case, half the length of the movement is assigned to the acceleration ramp and half to the deceleration ramp; moreover, in the case of an odd total length, the extra pitch resulting from the truncation to the lower integer of the ramps is assigned to the constant speed section.
+In this case, we note that, half the length of the movement is assigned to the acceleration ramp and half to the deceleration ramp; moreover, in the case of an odd total length, the extra pitch resulting from the truncation to the lower integer of the ramps is assigned to the constant speed section.
 
 These constants are all defined in the new header file *step_times.h*:
 <p align="center">
@@ -74,7 +74,7 @@ The vector *acc_times[]* contains in its locations the values of the register *T
   <img src="pic/step_times.c.png" width=600/>
 </p>
 
-The values have been obtained separately with a spreadsheet, through a procedure that we will pass on to deal with later. We note however that the length of the vector has been defined equal to the constant *ACC_LEN* (400). This means that the acceleration from minimum to maximum speed (and vice versa) is completed in 400 steps (two motor revolutions in *WAVE* or *FULL-STEP* mode or one revolution in *HALF-STEP* mode).
+The values were obtained separately with a spreadsheet, through a procedure that we will explore later. We note however that the length of the vector has been defined equal to the constant *ACC_LEN* (400). This means that the acceleration from minimum to maximum speed (and vice-versa) is completed in 400 steps (two motor revolutions in *WAVE* or *FULL-STEP* mode or one revolution in *HALF-STEP* mode).
 
 To modify the acceleration-deceleration profile, it is necessary to recalculate the values of the *acc_times[]* array and then recompile the *firmware* project code by rewriting it in the flash memory of the microcontroller.
 
@@ -138,7 +138,7 @@ In line *T0MR0* we obtain the numerical value to be entered in the *Timer0* regi
 
 By expanding the calculation to the right for 400 steps (counted in the row *n. steps*) we obtain the sequence of values to be loaded into the vector *acc_times[]*.
 
-The third row simply shows the sum of the times *T[s]* to get the total time elapsed from the beginning, useful for the final graph. Here we can verify that from 0.1 seconds to 2.83 seconds the motor frequency goes from 10 *Hz* to 280.7 *Hz*, in linear progression, with an acceleration equal to:
+The third row simply shows the sum of the times *T[s]* to get the total time elapsed from the beginning, useful for the final graph. Here, we can verify that from 0.1 seconds to 2.83 seconds the motor frequency goes from 10 *Hz* to 280.7 *Hz*, in linear progression, with an acceleration equal to:
 <p align="center"><i>a = (280.7-10)/(2.83-0.1) ≈ 99 [1/s<sup>2</sup>]</i></p>
 in line with the value chosen at the beginning in the spreadsheet.
 
@@ -147,4 +147,4 @@ The precise values at the end of the ramp (step 400) are shown in the following 
   <img src="pic/calc_5.png" width=115/>
 </p>
 
-If you want to change the speed profile, you can choose different values for the acceleration, the minimum speed and the length of the vector. Obviously, everything must be calibrated on the real mechanics of use of the stepper motor.
+If you want to change the speed profile, you can choose different values for the acceleration, the minimum speed and the length of the vector. Naturally, everything must be calibrated on the real mechanics of use of the stepper motor.
