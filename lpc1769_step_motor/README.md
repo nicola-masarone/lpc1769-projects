@@ -113,7 +113,7 @@ At the end of this preparatory work, *Timer0* is started. Remember that upon ret
   <img src="pic/timer0_irqhandler.png" width=600/>
 </p>
 
-Inside the *IRQ* manager of the *Timer0* as the first instruction we have the assignment to the output bits *P2.1-P2.4* of the current value of the sequence in use. To correctly index the current value we use the global variable *cur_state* previously initialized to zero. In this way we start from the first position of the desired vector.
+Inside the *IRQ* manager of the *Timer0* as the first instruction we have the assignment to the output bits *P2.1-P2.4* of the current value of the sequence in use. To correctly index the current value we use the global variable *cur_state* previously initialized to zero. In this way, we start from the first position of the desired vector.
 
 Then we choose, by the value of the global variable *cur_rot*, whether to increase or decrease the current state of the sequence (used as an index of the vectors). When *cur_state* reaches its upper limit (in the case of an increase) or lower (in the case of a decrease) it is brought back to the opposite limit.
 
@@ -124,4 +124,4 @@ The last instruction of the *handler* code is, as always, the cancellation of th
 ## Final conclusions
 The project presented allows the driving of a bipolar stepper motor at constant speed, with the possibility of choosing the type of driving (*wave*, *full-step* or *half-step*) and the number of steps performed for each stroke.
 
-The limit of the constant speed design consists in the fact that it allows only low speed movements (to avoid losing steps) and therefore with greater vibrations. A possible development involves the execution of the movement with variable speed by managing an acceleration capable of reaching higher speeds (less vibrations) without losing steps.
+The limit of the constant speed design consists in the fact that it allows only low speed movements (to avoid losing steps) and therefore greater vibrations. A possible development involves the execution of the movement with variable speed by managing an acceleration capable of reaching higher speeds (less vibrations) without losing steps.
